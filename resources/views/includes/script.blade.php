@@ -1,4 +1,6 @@
-<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
-</script>
-<script src="{{ asset('sbadmin/js/scripts.js') }}"></script>
+<script src="{{ asset('yash/vendor/tagify/dist/tagify.js') }}"></script>
+<script src="{{ asset('yash/vendor/global/global.min.js') }}"></script>
+<script src="{{ asset('yash/js/custom.js') }}"></script>
+<script src="{{ asset('yash/js/deznav-init.js') }}"></script>
+<script src="{{ asset('yash/js/demo.js') }}"></script>
+<script src="{{ asset('yash/js/styleSwitcher.js') }}"></script>

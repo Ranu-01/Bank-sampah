@@ -29,6 +29,10 @@ Route::get('/nas', function () {
     return view('pages.nasabah.index');
 });
 
+Route::get('/tambah-nasabah', function () {
+    return view('pages.nasabah.create');
+});
+
 Route::get('/t', function () {
     return view('pages.transaksi.index');
 });
