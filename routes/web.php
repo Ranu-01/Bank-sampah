@@ -20,3 +20,15 @@ Route::get('/', function () {
 Route::get('/regis', function () {
     return view('pages.registration.index');
 });
+
+Route::get('/log', function () {
+    return view('pages.login.index');
+});
+
+Route::get('/nas', function () {
+    return view('pages.nasabah.index');
+});
+
+Route::get('/t', function () {
+    return view('pages.transaksi.index');
+});
