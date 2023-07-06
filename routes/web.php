@@ -36,3 +36,11 @@ Route::get('/tambah-nasabah', function () {
 Route::get('/t', function () {
     return view('pages.transaksi.index');
 });
+
+Route::get('/sampah', function () {
+    return view('pages.sampah.index');
+});
+
+Route::get('/mon', function () {
+    return view('pages.monitor.index');
+});

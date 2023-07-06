@@ -74,7 +74,8 @@
                     </li>
                 </ul> --}}
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a href="{{ url('/sampah') }}" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -86,18 +87,18 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="nav-text">Charts</span>
+                    <span class="nav-text">Data Sampah</span>
                 </a>
-                <ul aria-expanded="false">
+                {{-- <ul aria-expanded="false">
                     <li><a href="chart-flot.html">Flot</a></li>
                     <li><a href="chart-morris.html">Morris</a></li>
                     <li><a href="chart-chartjs.html">Chartjs</a></li>
                     <li><a href="chart-chartist.html">Chartist</a></li>
                     <li><a href="chart-sparkline.html">Sparkline</a></li>
                     <li><a href="chart-peity.html">Peity</a></li>
-                </ul>
+                </ul> --}}
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            {{-- <li><a>
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -146,8 +147,8 @@
 
 
                 </ul>
-            </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            </li> --}}
+            <li><a href="{{ url('/mon') }}" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -167,9 +168,9 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="nav-text">Plugins</span>
+                    <span class="nav-text">Monitoring</span>
                 </a>
-                <ul aria-expanded="false">
+                {{-- <ul aria-expanded="false">
                     <li><a href="uc-select2.html">Select 2</a></li>
                     <li><a href="uc-nestable.html">Nestable</a></li>
                     <li><a href="uc-noui-slider.html">Noui Slider</a></li>
@@ -177,9 +178,9 @@
                     <li><a href="uc-toastr.html">Toastr</a></li>
                     <li><a href="map-jqvmap.html">Jqv Map</a></li>
                     <li><a href="uc-lightgallery.html">Light Gallery</a></li>
-                </ul>
+                </ul> --}}
             </li>
-            <li><a href="widget-basic.html" class="" aria-expanded="false">
+            {{-- <li><a href="widget-basic.html" class="" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -195,8 +196,9 @@
                     </div>
                     <span class="nav-text">Widget</span>
                 </a>
-            </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            </li> --}}
+            <li>
+                <a href="{{ url('/t') }}" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -211,17 +213,17 @@
                         </svg>
                     </div>
 
-                    <span class="nav-text">Forms</span>
+                    <span class="nav-text">Data Transaksi</span>
                 </a>
-                <ul aria-expanded="false">
+                {{-- <ul aria-expanded="false">
                     <li><a href="form-element.html">Form Elements</a></li>
                     <li><a href="form-wizard.html">Wizard</a></li>
                     <li><a href="form-ckeditor.html">CkEditor</a></li>
                     <li><a href="form-pickers.html">Pickers</a></li>
                     <li><a href="form-validation.html">Form Validate</a></li>
-                </ul>
+                </ul> --}}
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            {{-- <li><a>
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -247,8 +249,8 @@
                     <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
                     <li><a href="table-datatable-basic.html">Datatable</a></li>
                 </ul>
-            </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            </li> --}}
+            {{-- <li><a>
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -282,7 +284,7 @@
                     <li><a href="page-lock-screen.html">Lock Screen</a></li>
                     <li><a href="empty-page.html">Empty Page</a></li>
                 </ul>
-            </li>
+            </li> --}}
         </ul>
     </div>
 </div>

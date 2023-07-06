@@ -19,21 +19,21 @@
                         <table id="example" class="display table" style="min-width: 845px">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>Age</th>
-                                    <th>Start date</th>
-                                    <th>Action</th>
+                                    <th>Nama</th>
+                                    <th>No Kartu Keluarga</th>
+                                    <th>Email</th>
+                                    {{-- <th></th> --}}
+                                    <th>Penghasilan</th>
+                                    <th>Edit</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Tiger Nixon</td>
-                                    <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <td>61</td>
-                                    <td>2011/04/25</td>
+                                    <td>3098637928387</td>
+                                    <td>Contoh@gmail.com </td>
+                                    {{-- <td>61</td> --}}
+                                    <td>27000 / bulan</td>
                                     <td>
                                         <a href="" class="btn btn-success">Edit</a>
                                         <a href="" class="btn btn-danger">Hapus</a>
@@ -42,12 +42,12 @@
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>Age</th>
-                                    <th>Start date</th>
-                                    <th>Action</th>
+                                    <th>Nama</th>
+                                    <th>No Kartu Keluarga</th>
+                                    <th>Email</th>
+                                    {{-- <th>Age</th> --}}
+                                    <th>Penghasilan</th>
+                                    <th>Edit</th>
                                 </tr>
                             </tfoot>
                         </table>

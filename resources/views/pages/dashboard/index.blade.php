@@ -72,8 +72,8 @@
                             </svg>
                         </div>
                         <div class="total-projects ms-3">
+                            <span>Total Akun</span>
                             <h3 class="text-purple count">5282k</h3>
-                            <span>Total Not Started</span>
                         </div>
                     </div>
                 </div>
@@ -113,8 +113,9 @@
                             </svg>
                         </div>
                         <div class="total-projects ms-3">
+
+                            <span>Total Daur Ulang</span>
                             <h3 class="text-danger count">5,855k</h3>
-                            <span>Total Not Started</span>
                         </div>
                     </div>
                 </div>
