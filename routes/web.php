@@ -44,3 +44,6 @@ Route::get('/sampah', function () {
 Route::get('/mon', function () {
     return view('pages.monitor.index');
 });
+Route::get('/coba', function () {
+    return view('pages.nasabah.create');
+});

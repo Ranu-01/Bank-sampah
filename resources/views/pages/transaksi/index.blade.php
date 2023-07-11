@@ -22,8 +22,8 @@
                                     <th>No Kartu Keluarga</th>
                                     <th>Nama</th>
                                     <th>Total Sampah (Kg)</th>
-                                    {{-- <th></th> --}}
-                                    <th>Total Penghasilan (Bulan)</th>
+                                    <th>Penghasilan (Bulan)</th>
+                                    <th>Pengeluaran (Bulan)</th>
                                     <th>Edit</th>
                                 </tr>
                             </thead>
@@ -32,8 +32,8 @@
                                     <td>3098637928387</td>
                                     <td>Tiger Nixon</td>
                                     <td>9 </td>
-                                    {{-- <td>61</td> --}}
                                     <td>27000 </td>
+                                    <td>61</td>
                                     <td>
                                         <a href="" class="btn btn-success">Edit</a>
                                         <a href="" class="btn btn-danger">Hapus</a>
@@ -45,8 +45,8 @@
                                     <th>No Kartu Keluarga</th>
                                     <th>Nama</th>
                                     <th>Sampah</th>
-                                    {{-- <th>Age</th> --}}
                                     <th>Penghasilan</th>
+                                    <th>Age</th>
                                     <th>Edit</th>
                                 </tr>
                             </tfoot>
