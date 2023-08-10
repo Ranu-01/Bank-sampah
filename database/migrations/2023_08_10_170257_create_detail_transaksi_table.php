@@ -13,10 +13,19 @@ return new class extends Migration
     {
         Schema::create('detail_transaksi', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('id_transaksi');
-            $table->bigInteger('id_sampah');
-            $table->integer('jumblah');
+            $table->unsignedBigInteger('transaksi_id');
+            $table->unsignedBigInteger('sampah_id');
+            $table->integer('jumlah_sampah');
             $table->integer('subtotal');
+            $table->timestamps();
+
+            $table->foreign('transaksi_id')
+                ->references('id')->on('transaksi')
+                ->onDelete('cascade');
+
+            $table->foreign('sampah_id')
+                ->references('id')->on('sampah')
+                ->onDelete('cascade');
         });
     }
 

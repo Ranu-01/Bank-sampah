@@ -13,10 +13,15 @@ return new class extends Migration
     {
         Schema::create('sampah', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('id_kategori_sampah');
-            $table->string('nama_sampah');
-            $table->integer('satuan');
-            $table->integer('harga');
+            $table->unsignedBigInteger('kategori_sampah_id');
+            $table->string('nama_sampah')->unique();
+            $table->integer('harga_per_satuan')->default(0);
+            $table->string('satuan');
+            $table->timestamps();
+
+            $table->foreign('kategori_sampah_id')
+                ->references('id')->on('kategori_sampah')
+                ->onDelete('cascade');
         });
     }
 
