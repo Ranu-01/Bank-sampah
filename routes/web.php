@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\web\DashboardController;
+use App\Http\Controllers\web\NasabahController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,9 +25,7 @@ Route::get('/log', function () {
     return view('pages.login.index');
 });
 
-Route::get('/nas', function () {
-    return view('pages.nasabah.index');
-});
+Route::get('/nas', [NasabahController::class, 'index']);
 
 Route::get('/tambah-nasabah', function () {
     return view('pages.nasabah.create');

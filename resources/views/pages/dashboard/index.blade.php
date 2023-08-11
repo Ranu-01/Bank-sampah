@@ -27,7 +27,7 @@
                     </div>
                     <div class="total-projects ms-3">
                         <span>Data Nasabah</span>
-                        <h3 class="text-success count">50</h3>
+                        <h3 class="text-success count">{{ $total_nasabah }}</h3>
                     </div>
                 </div>
             </div>

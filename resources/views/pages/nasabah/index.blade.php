@@ -19,35 +19,52 @@
                         <table id="example" class="display table" style="min-width: 845px">
                             <thead>
                                 <tr>
+                                    <th>No</th>
                                     <th>Nama</th>
                                     <th>No Kartu Keluarga</th>
+                                    <th>Rt</th>
+                                    <th>Rw</th>
                                     <th>Email</th>
-                                    {{-- <th></th> --}}
-                                    <th>Penghasilan</th>
-                                    <th>Edit</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Tiger Nixon</td>
-                                    <td>3098637928387</td>
-                                    <td>Contoh@gmail.com </td>
-                                    {{-- <td>61</td> --}}
-                                    <td>27000 / bulan</td>
-                                    <td>
-                                        <a href="" class="btn btn-success">Edit</a>
-                                        <a href="" class="btn btn-danger">Hapus</a>
-                                    </td>
-                                </tr>
+                                @foreach ($data_nasabah as $nasabah)
+                                    <tr>
+                                        <td>
+                                            {{ $nasabah->id }}
+                                        </td>
+                                        <td>
+                                            {{ $nasabah->user->name }}
+                                        </td>
+                                        <td>
+                                            {{ $nasabah->no_kk }}
+                                        </td>
+                                        <td>
+                                            {{ $nasabah->rt->rt }}
+                                        </td>
+                                        <td>
+                                            {{ $nasabah->rt->rw->rw }}
+                                        </td>
+                                        <td>
+                                            {{ $nasabah->user->email }}
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-success">Edit</a>
+                                            <a href="" class="btn btn-danger">Hapus</a>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                             <tfoot>
                                 <tr>
+                                    <th>No</th>
                                     <th>Nama</th>
                                     <th>No Kartu Keluarga</th>
+                                    <th>Rt</th>
+                                    <th>Rw</th>
                                     <th>Email</th>
-                                    {{-- <th>Age</th> --}}
-                                    <th>Penghasilan</th>
-                                    <th>Edit</th>
+                                    <th>Action</th>
                                 </tr>
                             </tfoot>
                         </table>

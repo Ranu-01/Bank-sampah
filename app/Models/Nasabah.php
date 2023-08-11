@@ -20,4 +20,9 @@ class Nasabah extends Model
     {
         return $this->hasMany(Transaksi::class);
     }
+
+    public function rt()
+    {
+        return $this->belongsTo(Rt::class, 'rt_id', 'id');
+    }
 }
