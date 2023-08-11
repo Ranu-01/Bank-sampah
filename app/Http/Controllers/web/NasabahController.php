@@ -15,4 +15,9 @@ class NasabahController extends Controller
 
         return view('pages.nasabah.index', compact('data_nasabah'));
     }
+
+    public function create()
+    {
+        return view('pages.nasabah.create');
+    }
 }

@@ -69,7 +69,7 @@
                             </div>
                             <div class="mb-3 row">
                                 <div class="col-sm-10">
-                                    <a href="{{ url('/nas') }}" class="btn btn-light">Kembali</a>
+                                    <a href="{{ route('nasabah.index') }}" class="btn btn-light">Kembali</a>
                                     <button type="submit" class="btn btn-primary">Sign in</button>
                                 </div>
                             </div>

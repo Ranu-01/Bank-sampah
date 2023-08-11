@@ -12,7 +12,7 @@
                     <div>
                         <h4 class="card-title">Data Nasabah</h4>
                     </div>
-                    <a href="{{ url('/tambah-nasabah') }}" class="btn btn-primary">Tambah</a>
+                    <a href="{{ route('nasabah.create') }}" class="btn btn-primary">Tambah</a>
                 </div>
                 <div class="card-body pt-5">
                     <div class="table-responsive">

@@ -2,7 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\web\DashboardController;
+use App\Http\Controllers\web\MonitoringController;
 use App\Http\Controllers\web\NasabahController;
+use App\Http\Controllers\web\SampahController;
+use App\Http\Controllers\web\TransaksiController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,31 +21,23 @@ use App\Http\Controllers\web\NasabahController;
 
 Route::get('/', [DashboardController::class, 'index']);
 
-Route::get('/regis', function () {
-    return view('pages.registration.index');
+Route::controller(DashboardController::class)->group(function () {
+    Route::get('/', 'index');
 });
 
-Route::get('/log', function () {
-    return view('pages.login.index');
+Route::controller(NasabahController::class)->group(function () {
+    Route::get('/nasabah', 'index')->name('nasabah.index');
+    Route::get('/nasabah/create', 'create')->name('nasabah.create');
 });
 
-Route::get('/nas', [NasabahController::class, 'index']);
-
-Route::get('/tambah-nasabah', function () {
-    return view('pages.nasabah.create');
+Route::controller(SampahController::class)->group(function () {
+    Route::get('/sampah', 'index')->name('sampah.index');
 });
 
-Route::get('/t', function () {
-    return view('pages.transaksi.index');
+Route::controller(TransaksiController::class)->group(function () {
+    Route::get('/transaksi', 'index')->name('transaksi.index');
 });
 
-Route::get('/sampah', function () {
-    return view('pages.sampah.index');
-});
-
-Route::get('/mon', function () {
-    return view('pages.monitor.index');
-});
-Route::get('/coba', function () {
-    return view('pages.nasabah.create');
+Route::controller(MonitoringController::class)->group(function () {
+    Route::get('/monitoring', 'index')->name('monitoring.index');
 });

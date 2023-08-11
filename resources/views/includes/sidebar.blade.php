@@ -17,7 +17,7 @@
             </li>
             <li class="menu-title">MASTER DATA</li>
             <li>
-                <a href="{{ url('/nas') }}" aria-expanded="false">
+                <a href="{{ route('nasabah.index') }}" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +75,7 @@
                 </ul> --}}
             </li>
             <li>
-                <a href="{{ url('/sampah') }}" aria-expanded="false">
+                <a href="{{ route('sampah.index') }}" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +148,7 @@
 
                 </ul>
             </li> --}}
-            <li><a href="{{ url('/mon') }}" aria-expanded="false">
+            <li><a href="{{ route('monitoring.index') }}" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -198,7 +198,7 @@
                 </a>
             </li> --}}
             <li>
-                <a href="{{ url('/t') }}" aria-expanded="false">
+                <a href="{{ route('transaksi.index') }}" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
