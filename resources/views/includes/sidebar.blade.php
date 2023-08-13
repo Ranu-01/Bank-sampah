@@ -3,7 +3,7 @@
         <ul class="metismenu" id="menu">
             <li class="menu-title">DASHBOARD</li>
             <li>
-                <a href="{{ url('/') }}" aria-expanded="false">
+                <a href="{{ route('dashboard.index') }}" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -36,43 +36,25 @@
                                     fill="white" />
                             </g>
                         </svg>
-
                     </div>
                     <span class="nav-text">Data Nasabah</span>
                 </a>
-                {{-- <ul aria-expanded="false">
-                    <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Users Manager<span
-                                class="badge badge-danger badge-xs ms-1">NEW</span></a>
-                        <ul aria-expanded="false">
-                            <li><a href="user.html">User</a></li>
-                            <li><a href="edit-profile.html">Add User</a></li>
-                            <li><a href="app-profile-1.html">Profile 1</a></li>
-                            <li><a href="app-profile-2.html">Profile 2 <span
-                                        class="badge badge-danger badge-xs ms-1">NEW</span></a></li>
-                            <li><a href="edit-profile.html">Edit Profile</a></li>
-                            <li><a href="post-details.html">Post Details</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Email</a>
-                        <ul aria-expanded="false">
-                            <li><a href="email-compose.html">Compose</a></li>
-                            <li><a href="email-inbox.html">Inbox</a></li>
-                            <li><a href="email-read.html">Read</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="app-calender.html">Calendar</a></li>
-                    <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Shop</a>
-                        <ul aria-expanded="false">
-                            <li><a href="ecom-product-grid.html">Product Grid</a></li>
-                            <li><a href="ecom-product-list.html">Product List</a></li>
-                            <li><a href="ecom-product-detail.html">Product Details</a></li>
-                            <li><a href="ecom-product-order.html">Order</a></li>
-                            <li><a href="ecom-checkout.html">Checkout</a></li>
-                            <li><a href="ecom-invoice.html">Invoice</a></li>
-                            <li><a href="ecom-customers.html">Customers</a></li>
-                        </ul>
-                    </li>
-                </ul> --}}
+            </li>
+            <li>
+                <a href="{{ route('kategori-sampah.index') }}" aria-expanded="false">
+                    <div class="menu-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.2428 4.73756C15.2428 6.95855 17.0459 8.75902 19.2702 8.75902C19.5151 8.75782 19.7594 8.73431 20 8.68878V16.6615C20 20.0156 18.0215 22 14.6624 22H7.34636C3.97851 22 2 20.0156 2 16.6615V9.3561C2 6.00195 3.97851 4 7.34636 4H15.3131C15.2659 4.243 15.2423 4.49001 15.2428 4.73756ZM13.15 14.8966L16.0078 11.2088V11.1912C16.2525 10.8625 16.1901 10.3989 15.8671 10.1463C15.7108 10.0257 15.5122 9.97345 15.3167 10.0016C15.1211 10.0297 14.9453 10.1358 14.8295 10.2956L12.4201 13.3951L9.6766 11.2351C9.51997 11.1131 9.32071 11.0592 9.12381 11.0856C8.92691 11.1121 8.74898 11.2166 8.63019 11.3756L5.67562 15.1863C5.57177 15.3158 5.51586 15.4771 5.51734 15.6429C5.5002 15.9781 5.71187 16.2826 6.03238 16.3838C6.35288 16.485 6.70138 16.3573 6.88031 16.0732L9.35125 12.8771L12.0948 15.0283C12.2508 15.1541 12.4514 15.2111 12.6504 15.1863C12.8494 15.1615 13.0297 15.0569 13.15 14.8966Z"
+                                    fill="white" />
+                                <circle opacity="0.4" cx="19.5" cy="4.5" r="2.5" fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="nav-text">Data Kategori</span>
+                </a>
             </li>
             <li>
                 <a href="{{ route('sampah.index') }}" aria-expanded="false">
@@ -89,65 +71,7 @@
                     </div>
                     <span class="nav-text">Data Sampah</span>
                 </a>
-                {{-- <ul aria-expanded="false">
-                    <li><a href="chart-flot.html">Flot</a></li>
-                    <li><a href="chart-morris.html">Morris</a></li>
-                    <li><a href="chart-chartjs.html">Chartjs</a></li>
-                    <li><a href="chart-chartist.html">Chartist</a></li>
-                    <li><a href="chart-sparkline.html">Sparkline</a></li>
-                    <li><a href="chart-peity.html">Peity</a></li>
-                </ul> --}}
             </li>
-            {{-- <li><a>
-                    <div class="menu-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.5">
-                                <path opacity="0.4"
-                                    d="M11.776 21.8374C9.49292 20.4273 7.37062 18.7645 5.44789 16.8796C4.0905 15.5338 3.05386 13.8905 2.41716 12.0753C1.27953 8.53523 2.60381 4.48948 6.30111 3.2884C8.25262 2.67553 10.375 3.05175 12.007 4.29983C13.6396 3.05315 15.7614 2.67705 17.713 3.2884C21.4103 4.48948 22.7435 8.53523 21.6058 12.0753C20.9743 13.8888 19.9438 15.5319 18.5929 16.8796C16.6684 18.7625 14.5463 20.4251 12.2648 21.8374L12.0159 22L11.776 21.8374Z"
-                                    fill="white" />
-                                <path
-                                    d="M12.0109 22L11.776 21.8374C9.49013 20.4274 7.36487 18.7647 5.43902 16.8796C4.0752 15.5356 3.03238 13.8922 2.39052 12.0753C1.26177 8.53523 2.58605 4.48948 6.28335 3.2884C8.23486 2.67553 10.3853 3.05204 12.0109 4.31057V22Z"
-                                    fill="white" />
-                                <path
-                                    d="M18.2304 9.99922C18.0296 9.98629 17.8425 9.8859 17.7131 9.72157C17.5836 9.55723 17.5232 9.3434 17.5459 9.13016C17.5677 8.4278 17.168 7.78851 16.5517 7.53977C16.1609 7.43309 15.9243 7.00987 16.022 6.59249C16.1148 6.18182 16.4993 5.92647 16.8858 6.0189C16.9346 6.027 16.9816 6.04468 17.0244 6.07105C18.2601 6.54658 19.0601 7.82641 18.9965 9.22576C18.9944 9.43785 18.9117 9.63998 18.7673 9.78581C18.6229 9.93164 18.4291 10.0087 18.2304 9.99922Z"
-                                    fill="white" />
-                            </g>
-                        </svg>
-                    </div>
-                    <span class="nav-text">Bootstrap</span>
-                </a>
-                <ul aria-expanded="false">
-                    <li><a href="ui-accordion.html">Accordion</a></li>
-                    <li><a href="ui-alert.html">Alert</a></li>
-                    <li><a href="ui-badge.html">Badge</a></li>
-                    <li><a href="ui-button.html">Button</a></li>
-                    <li><a href="ui-modal.html">Modal</a></li>
-                    <li class="extra-menu-li">
-                        <ul id="collapseExample" class="pt-0 extra-menu-links extra-menu-area">
-                            <li><a href="ui-button-group.html">Button Group</a></li>
-                            <li><a href="ui-list-group.html">List Group</a></li>
-                            <li><a href="ui-card.html">Cards</a></li>
-                            <li><a href="ui-carousel.html">Carousel</a></li>
-                            <li><a href="ui-dropdown.html">Dropdown</a></li>
-                            <li><a href="ui-popover.html">Popover</a></li>
-                            <li><a href="ui-progressbar.html">Progressbar</a></li>
-                            <li><a href="ui-tab.html">Tab</a></li>
-                            <li><a href="ui-typography.html">Typography</a></li>
-                            <li><a href="ui-pagination.html">Pagination</a></li>
-                            <li><a href="ui-grid.html">Grid</a></li>
-                        </ul>
-                        <a class="btn show-more-btn border-0" data-bs-toggle="collapse" href="#collapseExample"
-                            role="button" aria-expanded="false" aria-controls="collapseExample">
-                            <span class="show-more">Show More + </span>
-                            <span class="show-less">Show Less - </span>
-                        </a>
-                    </li>
-
-
-
-                </ul>
-            </li> --}}
             <li><a href="{{ route('monitoring.index') }}" aria-expanded="false">
                     <div class="menu-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -170,33 +94,7 @@
                     </div>
                     <span class="nav-text">Monitoring</span>
                 </a>
-                {{-- <ul aria-expanded="false">
-                    <li><a href="uc-select2.html">Select 2</a></li>
-                    <li><a href="uc-nestable.html">Nestable</a></li>
-                    <li><a href="uc-noui-slider.html">Noui Slider</a></li>
-                    <li><a href="uc-sweetalert.html">Sweet Alert</a></li>
-                    <li><a href="uc-toastr.html">Toastr</a></li>
-                    <li><a href="map-jqvmap.html">Jqv Map</a></li>
-                    <li><a href="uc-lightgallery.html">Light Gallery</a></li>
-                </ul> --}}
             </li>
-            {{-- <li><a href="widget-basic.html" class="" aria-expanded="false">
-                    <div class="menu-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.5">
-                                <path opacity="0.4"
-                                    d="M16.0755 2H19.4615C20.8637 2 22 3.14585 22 4.55996V7.97452C22 9.38864 20.8637 10.5345 19.4615 10.5345H16.0755C14.6732 10.5345 13.537 9.38864 13.537 7.97452V4.55996C13.537 3.14585 14.6732 2 16.0755 2Z"
-                                    fill="white" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M4.53852 2H7.92449C9.32676 2 10.463 3.14585 10.463 4.55996V7.97452C10.463 9.38864 9.32676 10.5345 7.92449 10.5345H4.53852C3.13626 10.5345 2 9.38864 2 7.97452V4.55996C2 3.14585 3.13626 2 4.53852 2ZM4.53852 13.4655H7.92449C9.32676 13.4655 10.463 14.6114 10.463 16.0255V19.44C10.463 20.8532 9.32676 22 7.92449 22H4.53852C3.13626 22 2 20.8532 2 19.44V16.0255C2 14.6114 3.13626 13.4655 4.53852 13.4655ZM19.4615 13.4655H16.0755C14.6732 13.4655 13.537 14.6114 13.537 16.0255V19.44C13.537 20.8532 14.6732 22 16.0755 22H19.4615C20.8637 22 22 20.8532 22 19.44V16.0255C22 14.6114 20.8637 13.4655 19.4615 13.4655Z"
-                                    fill="white" />
-                            </g>
-                        </svg>
-                    </div>
-                    <span class="nav-text">Widget</span>
-                </a>
-            </li> --}}
             <li>
                 <a href="{{ route('transaksi.index') }}" aria-expanded="false">
                     <div class="menu-icon">
@@ -212,79 +110,9 @@
                             </g>
                         </svg>
                     </div>
-
                     <span class="nav-text">Data Transaksi</span>
                 </a>
-                {{-- <ul aria-expanded="false">
-                    <li><a href="form-element.html">Form Elements</a></li>
-                    <li><a href="form-wizard.html">Wizard</a></li>
-                    <li><a href="form-ckeditor.html">CkEditor</a></li>
-                    <li><a href="form-pickers.html">Pickers</a></li>
-                    <li><a href="form-validation.html">Form Validate</a></li>
-                </ul> --}}
             </li>
-            {{-- <li><a>
-                    <div class="menu-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.5">
-                                <path opacity="0.4"
-                                    d="M6.70555 12.8905C6.18944 12.8905 5.77163 13.3145 5.77163 13.8383L5.51416 18.4171C5.51416 19.0846 6.04783 19.625 6.70555 19.625C7.36328 19.625 7.89577 19.0846 7.89577 18.4171L7.63947 13.8383C7.63947 13.3145 7.22167 12.8905 6.70555 12.8905Z"
-                                    fill="white" />
-                                <path
-                                    d="M7.98037 3.67345C7.98037 3.67345 7.71236 3.39789 7.54618 3.27793C7.30509 3.09264 7.00783 3 6.71173 3C6.37936 3 6.07039 3.10452 5.81877 3.30169C5.77313 3.34801 5.57886 3.5226 5.41852 3.68532C4.41204 4.6367 2.76539 7.12026 2.26215 8.42083C2.18257 8.618 2.01053 9.11685 2 9.38409C2 9.63827 2.05618 9.88294 2.17087 10.1145C2.3312 10.4044 2.58282 10.6372 2.88009 10.7642C3.08606 10.8462 3.70282 10.9733 3.71453 10.9733C4.38981 11.1016 5.48757 11.1704 6.70003 11.1704C7.85514 11.1704 8.90727 11.1016 9.59308 10.997C9.60478 10.9852 10.3702 10.8581 10.6335 10.7179C11.1133 10.4626 11.4118 9.96371 11.4118 9.43041V9.38409C11.4001 9.03608 11.1016 8.30444 11.0911 8.30444C10.5879 7.07394 9.02079 4.64858 7.98037 3.67345Z"
-                                    fill="white" />
-                                <path opacity="0.4"
-                                    d="M17.2947 11.1096C17.8108 11.1096 18.2286 10.6856 18.2286 10.1618L18.4849 5.58296C18.4849 4.91543 17.9524 4.375 17.2947 4.375C16.637 4.375 16.1033 4.91543 16.1033 5.58296L16.3608 10.1618C16.3608 10.6856 16.7786 11.1096 17.2947 11.1096Z"
-                                    fill="white" />
-                                <path
-                                    d="M21.8292 13.8853C21.6688 13.5955 21.4172 13.3639 21.1199 13.2356C20.914 13.1536 20.296 13.0265 20.2855 13.0265C19.6102 12.8983 18.5124 12.8294 17.3 12.8294C16.1449 12.8294 15.0928 12.8983 14.4069 13.0028C14.3952 13.0147 13.6298 13.1429 13.3665 13.2819C12.8855 13.5373 12.5883 14.0361 12.5883 14.5706V14.617C12.6 14.965 12.8972 15.6954 12.9089 15.6954C13.4122 16.926 14.9781 19.3526 16.0197 20.3265C16.0197 20.3265 16.2877 20.6021 16.4538 20.7209C16.6938 20.9074 16.991 21 17.2895 21C17.6207 21 17.9285 20.8955 18.1812 20.6983C18.2269 20.652 18.4212 20.4774 18.5815 20.3158C19.5868 19.3633 21.2346 16.8796 21.7367 15.5802C21.8175 15.3831 21.9895 14.883 22 14.617C22 14.3616 21.9438 14.1169 21.8292 13.8853Z"
-                                    fill="white" />
-                            </g>
-                        </svg>
-                    </div>
-                    <span class="nav-text">Table</span>
-                </a>
-                <ul aria-expanded="false">
-                    <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
-                    <li><a href="table-datatable-basic.html">Datatable</a></li>
-                </ul>
-            </li> --}}
-            {{-- <li><a>
-                    <div class="menu-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.5">
-                                <path opacity="0.4"
-                                    d="M2.00018 11.0785C2.05018 13.4165 2.19018 17.4155 2.21018 17.8565C2.28118 18.7995 2.64218 19.7525 3.20418 20.4245C3.98618 21.3675 4.94918 21.7885 6.29218 21.7885C8.14818 21.7985 10.1942 21.7985 12.1812 21.7985C14.1762 21.7985 16.1122 21.7985 17.7472 21.7885C19.0712 21.7885 20.0642 21.3565 20.8362 20.4245C21.3982 19.7525 21.7592 18.7895 21.8102 17.8565C21.8302 17.4855 21.9302 13.1445 21.9902 11.0785H2.00018Z"
-                                    fill="white" />
-                                <path
-                                    d="M11.2454 15.3842V16.6782C11.2454 17.0922 11.5814 17.4282 11.9954 17.4282C12.4094 17.4282 12.7454 17.0922 12.7454 16.6782V15.3842C12.7454 14.9702 12.4094 14.6342 11.9954 14.6342C11.5814 14.6342 11.2454 14.9702 11.2454 15.3842Z"
-                                    fill="white" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.2113 14.5564C10.1113 14.9194 9.7623 15.1514 9.38431 15.1014C6.8333 14.7454 4.39531 13.8404 2.33731 12.4814C2.12631 12.3434 2.00031 12.1074 2.00031 11.8554V8.3894C2.00031 6.2894 3.71231 4.5814 5.81731 4.5814H7.78431C7.97231 3.1294 9.20231 2.0004 10.7043 2.0004H13.2863C14.7873 2.0004 16.0183 3.1294 16.2063 4.5814H18.1833C20.2823 4.5814 21.9903 6.2894 21.9903 8.3894V11.8554C21.9903 12.1074 21.8633 12.3424 21.6543 12.4814C19.5923 13.8464 17.1443 14.7554 14.5763 15.1104C14.5413 15.1154 14.5073 15.1174 14.4733 15.1174C14.1343 15.1174 13.8313 14.8884 13.7463 14.5524C13.5443 13.7564 12.8213 13.1994 11.9903 13.1994C11.1483 13.1994 10.4333 13.7444 10.2113 14.5564ZM13.2863 3.5004H10.7043C10.0313 3.5004 9.46931 3.9604 9.30131 4.5814H14.6883C14.5203 3.9604 13.9583 3.5004 13.2863 3.5004Z"
-                                    fill="white" />
-                            </g>
-                        </svg>
-                    </div>
-                    <span class="nav-text">Pages</span>
-                </a>
-                <ul aria-expanded="false">
-                    <li><a href="page-login.html">Login</a></li>
-                    <li><a href="page-register.html">Register</a></li>
-                    <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Error</a>
-                        <ul aria-expanded="false">
-                            <li><a href="page-error-400.html">Error 400</a></li>
-                            <li><a href="page-error-403.html">Error 403</a></li>
-                            <li><a href="page-error-404.html">Error 404</a></li>
-                            <li><a href="page-error-500.html">Error 500</a></li>
-                            <li><a href="page-error-503.html">Error 503</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="page-lock-screen.html">Lock Screen</a></li>
-                    <li><a href="empty-page.html">Empty Page</a></li>
-                </ul>
-            </li> --}}
         </ul>
     </div>
 </div>

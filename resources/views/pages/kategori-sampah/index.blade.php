@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    Data Nasabah
+    Data Kategori Sampah
 @endsection
 
 @section('content')
@@ -10,9 +10,9 @@
             <div class="card">
                 <div class="card-header flex-wrap">
                     <div>
-                        <h4 class="card-title">Data Nasabah</h4>
+                        <h4 class="card-title">Data Kategori Sampah</h4>
                     </div>
-                    {{-- <a href="{{ route('nasabah.create') }}" class="btn btn-primary">Tambah</a> --}}
+                    <a href="{{ route('kategori-sampah.create') }}" class="btn btn-primary">Tambah</a>
                 </div>
                 <div class="card-body pt-5">
                     <div class="table-responsive">
@@ -20,11 +20,7 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama</th>
-                                    <th>No Kartu Keluarga</th>
-                                    <th>Rt</th>
-                                    <th>Rw</th>
-                                    <th>Email</th>
+                                    <th>Nama Kategori</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -32,29 +28,19 @@
                                 @php
                                     $no = 1;
                                 @endphp
-                                @foreach ($data_nasabah as $nasabah)
+                                @foreach ($kategori_sampah as $data)
                                     <tr>
                                         <td>
                                             {{ $no++ }}
                                         </td>
                                         <td>
-                                            {{ $nasabah->user->name }}
+                                            {{ $data->nama_kategori }}
                                         </td>
                                         <td>
-                                            {{ $nasabah->no_kk }}
-                                        </td>
-                                        <td>
-                                            {{ $nasabah->rt->rt }}
-                                        </td>
-                                        <td>
-                                            {{ $nasabah->rt->rw->rw }}
-                                        </td>
-                                        <td>
-                                            {{ $nasabah->user->email }}
-                                        </td>
-                                        <td>
-                                            <a href="" class="btn btn-success">Edit</a>
-                                            <a href="" class="btn btn-danger">Hapus</a>
+                                            <a href="{{ route('kategori-sampah.edit', ['id' => $data->id]) }}"
+                                                class="btn btn-success">Edit</a>
+                                            <a href="{{ route('kategori-sampah.destroy', ['id' => $data->id]) }}"
+                                                class="btn btn-danger">Hapus</a>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -62,11 +48,7 @@
                             <tfoot>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama</th>
-                                    <th>No Kartu Keluarga</th>
-                                    <th>Rt</th>
-                                    <th>Rw</th>
-                                    <th>Email</th>
+                                    <th>Nama Kategori</th>
                                     <th>Action</th>
                                 </tr>
                             </tfoot>

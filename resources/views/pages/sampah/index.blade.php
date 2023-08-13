@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    Data Nasabah
+    Data Sampah
 @endsection
 
 @section('content')
@@ -12,41 +12,61 @@
                     <div>
                         <h4 class="card-title">Data Sampah</h4>
                     </div>
-                    {{-- <a href="{{ url('/tambah-nasabah') }}" class="btn btn-primary">Tambah</a> --}}
+                    <a href="{{ route('sampah.create') }}" class="btn btn-primary">Tambah</a>
                 </div>
                 <div class="card-body pt-5">
                     <div class="table-responsive">
                         <table id="example" class="display table" style="min-width: 845px">
                             <thead>
                                 <tr>
-                                    <th>Katagori</th>
-                                    <th>Jenis</th>
-                                    <th>Harga per</th>
-                                    {{-- <th></th>
-                                    <th>TOtal Penghasilan</th>
-                                    <th>Edit</th> --}}
+                                    <th>No</th>
+                                    <th>Nama Sampah</th>
+                                    <th>Kategori</th>
+                                    <th>Satuan</th>
+                                    <th>Harga/Satuan</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Kertas</td>
-                                    <td>kertas Bagus</td>
-                                    <td>1.300 </td>
-                                    {{-- <td>61</td>
-                                    <td>27000 / Bulan</td>
-                                    <td> hello</td> --}}
-                                </tr>
+                                @php
+                                    $no = 1;
+                                @endphp
+                                @foreach ($sampah as $data)
+                                    <tr>
+                                        <td>
+                                            {{ $no++ }}
+                                        </td>
+                                        <td>
+                                            {{ $data->nama_sampah }}
+                                        </td>
+                                        <td>
+                                            {{ $data->kategorisampah->nama_kategori }}
+                                        </td>
+                                        <td>
+                                            {{ $data->satuan }}
+                                        </td>
+                                        <td>
+                                            {{ 'Rp ' . number_format($data->harga_per_satuan, 0, '', '.') . '/' . $data->satuan }}
+                                        </td>
+                                        <td>
+                                            <a href="{{ route('kategori-sampah.edit', ['id' => $data->id]) }}"
+                                                class="btn btn-success">Edit</a>
+                                            <a href="{{ route('kategori-sampah.destroy', ['id' => $data->id]) }}"
+                                                class="btn btn-danger">Hapus</a>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
-                            {{-- <tfoot>
+                            <tfoot>
                                 <tr>
-                                    <th>No Kartu Keluarga</th>
-                                    <th>Nama</th>
-                                    <th>Sampah</th>
-                                    <th>Age</th>
-                                    <th>Penghasilan</th>
-                                    <th>Edit</th>
+                                    <th>No</th>
+                                    <th>Nama Sampah</th>
+                                    <th>Kategori</th>
+                                    <th>Satuan</th>
+                                    <th>Harga/Satuan</th>
+                                    <th>Action</th>
                                 </tr>
-                            </tfoot> --}}
+                            </tfoot>
                         </table>
                     </div>
                 </div>
@@ -55,7 +75,7 @@
     </div>
 @endsection
 
-{{-- @push('before-style')
+@push('before-style')
     <!-- FAVICONS ICON -->
     <link rel="shortcut icon" type="image/png" href="{{ asset('yash/images/favicon.png') }}">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
@@ -67,4 +87,4 @@
 @push('after-script')
     <script src="{{ asset('yash/vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('yash/js/plugins-init/datatables.init.js') }}"></script>
-@endpush --}}
+@endpush
