@@ -49,9 +49,9 @@
                                             {{ 'Rp ' . number_format($data->harga_per_satuan, 0, '', '.') . '/' . $data->satuan }}
                                         </td>
                                         <td>
-                                            <a href="{{ route('kategori-sampah.edit', ['id' => $data->id]) }}"
+                                            <a href="{{ route('sampah.edit', ['id' => $data->id]) }}"
                                                 class="btn btn-success">Edit</a>
-                                            <a href="{{ route('kategori-sampah.destroy', ['id' => $data->id]) }}"
+                                            <a href="{{ route('sampah.destroy', ['id' => $data->id]) }}"
                                                 class="btn btn-danger">Hapus</a>
                                         </td>
                                     </tr>

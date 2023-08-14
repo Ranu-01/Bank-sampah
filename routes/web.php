@@ -34,6 +34,9 @@ Route::controller(SampahController::class)->group(function () {
     Route::get('/sampah', 'index')->name('sampah.index');
     Route::get('/sampah/create', 'create')->name('sampah.create');
     Route::post('/sampah/store', 'store')->name('sampah.store');
+    Route::get('/sampah/edit/{id}', 'edit')->name('sampah.edit');
+    Route::post('/sampah/update/{id}', 'update')->name('sampah.update');
+    Route::get('/sampah/destroy/{id}', 'destroy')->name('sampah.destroy');
 });
 
 Route::controller(TransaksiController::class)->group(function () {
