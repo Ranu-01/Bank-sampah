@@ -35,7 +35,7 @@ class KategoriSampahController extends Controller
             $kategori_sampah->nama_kategori = $request->nama_kategori;
             $kategori_sampah->save();
             DB::commit();
-            return redirect()->route('kategori-sampah.index');
+            return redirect()->route('kategori-sampah.index')->with("message", "Berhasil menambahkan data kategori sampah");
         } catch (\Exception $ex) {
             //throw $th;
             DB::rollBack();
@@ -63,7 +63,7 @@ class KategoriSampahController extends Controller
             $kategori_sampah->nama_kategori = $request->nama_kategori;
             $kategori_sampah->save();
             DB::commit();
-            return redirect()->route('kategori-sampah.index');
+            return redirect()->route('kategori-sampah.index')->with("message", "Berhasil mengubah data sampah");
         } catch (\Exception $ex) {
             //throw $th;
             DB::rollBack();
@@ -77,7 +77,7 @@ class KategoriSampahController extends Controller
         try {
             KategoriSampah::where('id', $id)->delete();
             DB::commit();
-            return redirect()->route('kategori-sampah.index');
+            return redirect()->route('kategori-sampah.index')->with("message", "Berhasil menghapus data sampah");
         } catch (\Exception $ex) {
             //throw $th;
             DB::rollBack();

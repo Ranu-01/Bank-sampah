@@ -49,21 +49,30 @@
     </div>
     <!-- End Page Header -->
 
+    @if (session('message'))
+        <div class="alert alert-success" role="alert">
+            <button aria-label="Close" class="btn-close" data-bs-dismiss="alert" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>{{ session('message') }}</strong>
+        </div>
+    @endif
+
     <!-- Row -->
     <div class="row row-sm">
         <div class="col-lg-12">
             <div class="card custom-card overflow-hidden">
                 <div class="card-body">
-                    <div>
+                    <div class="mb-3">
                         <h6 class="main-content-label mb-1">Data Kategori Sampah</h6>
                     </div>
                     <div class="table-responsive">
                         <table class="table table-bordered border-bottom" id="example1">
                             <thead>
                                 <tr>
-                                    <th class="wd-20p">No</th>
-                                    <th class="wd-25p">Nama Kategori</th>
-                                    <th class="wd-20p">Action</th>
+                                    <th>No</th>
+                                    <th>Nama Kategori</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>

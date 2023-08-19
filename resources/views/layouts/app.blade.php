@@ -26,6 +26,8 @@
 
     @include('includes.footer')
     <!-- END PAGE -->
+    <!-- BACK TO TOP -->
+    <a href="#top" id="back-to-top"><i class="fe fe-arrow-up"></i></a>
 
     @stack('before-script')
     @include('includes.script')
