@@ -4,253 +4,779 @@
     Dashboard
 @endsection
 
-@section('content')
-    <div class="row">
-        <div class="col-xl-3 col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <a href="{{ url('/nas') }}" aria-expanded="false">
-                            <div class="icon-box icon-box-lg bg-success-light rounded-circle">
-                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M22.9715 29.3168C15.7197 29.3168 9.52686 30.4132 9.52686 34.8043C9.52686 39.1953 15.6804 40.331 22.9715 40.331C30.2233 40.331 36.4144 39.2328 36.4144 34.8435C36.4144 30.4543 30.2626 29.3168 22.9715 29.3168Z"
-                                        stroke="#3AC977" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    </path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M22.9714 23.0537C27.7304 23.0537 31.5875 19.1948 31.5875 14.4359C31.5875 9.67694 27.7304 5.81979 22.9714 5.81979C18.2125 5.81979 14.3536 9.67694 14.3536 14.4359C14.3375 19.1787 18.1696 23.0377 22.9107 23.0537H22.9714Z"
-                                        stroke="#3AC977" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    </path>
-                                </svg>
-                        </a>
-                    </div>
-                    <div class="total-projects ms-3">
-                        <span>Data Nasabah</span>
-                        <h3 class="text-success count">{{ $total_nasabah }}</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-3 col-sm-6">
-        <div class="card">
-            <div class="card-body">
-                <div class="d-flex align-items-center justify-content-between">
-                    <a href="{{ url('/sampah') }}" aria-expanded="false">
-                        <div class="icon-box icon-box-lg bg-primary-light rounded-circle">
-                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M32.8961 26.5849C34.1612 26.5849 35.223 27.629 35.0296 28.8783C33.8947 36.2283 27.6026 41.6855 20.0138 41.6855C11.6178 41.6855 4.8125 34.8803 4.8125 26.4862C4.8125 19.5704 10.0664 13.1283 15.9816 11.6717C17.2526 11.3579 18.5553 12.252 18.5553 13.5605C18.5553 22.4263 18.8533 24.7197 20.5368 25.9671C22.2204 27.2145 24.2 26.5849 32.8961 26.5849Z"
-                                    stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M41.1733 19.2019C41.2739 13.5059 34.2772 4.32428 25.7509 4.48217C25.0877 4.49402 24.5568 5.04665 24.5272 5.70783C24.3121 10.3914 24.6022 16.4605 24.764 19.2118C24.8134 20.0684 25.4864 20.7414 26.341 20.7907C29.1693 20.9526 35.4594 21.1736 40.0759 20.4749C40.7035 20.3802 41.1634 19.8355 41.1733 19.2019Z"
-                                    stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </svg>
-                    </a>
-                </div>
-                <div class="total-projects ms-3">
-                    <span>Rata-Rata Sampah</span>
-                    <h3 class="text-primary count">90 Kg/2 day</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="col-xl-3 col-sm-6">
-        <div class="card">
-            <div class="card-body">
-                <div class="d-flex align-items-center justify-content-between">
-                    <a href="{{ url('/nas') }}" aria-expanded="false">
-                        <div class="icon-box icon-box-lg bg-purple-light rounded-circle">
-                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.9717 41.0539C22.9717 41.0539 37.3567 36.6983 37.3567 24.6908C37.3567 12.6814 37.878 11.7439 36.723 10.5889C35.5699 9.43391 24.858 5.69891 22.9717 5.69891C21.0855 5.69891 10.3736 9.43391 9.21863 10.5889C8.0655 11.7439 8.58675 12.6814 8.58675 24.6908C8.58675 36.6983 22.9717 41.0539 22.9717 41.0539Z"
-                                    stroke="#BB6BD9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path d="M26.4945 26.4642L19.4482 19.4179" stroke="#BB6BD9" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M19.4487 26.4642L26.495 19.4179" stroke="#BB6BD9" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </div>
-                    </a>
-                    <div class="total-projects ms-3">
-                        <span>Total Akun</span>
-                        <h3 class="text-purple count">5282k</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-3 col-sm-6">
-        <div class="card">
-            <div class="card-body">
-                <div class="d-flex align-items-center justify-content-between">
-                    <div class="icon-box icon-box-lg bg-danger-light rounded-circle">
-                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M34.0396 20.974C36.6552 20.6065 38.6689 18.364 38.6746 15.6471C38.6746 12.9696 36.7227 10.7496 34.1633 10.3296"
-                                stroke="#FF5E5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            </path>
-                            <path
-                                d="M37.4912 27.262C40.0243 27.6407 41.7925 28.5276 41.7925 30.3557C41.7925 31.6139 40.96 32.4314 39.6137 32.9451"
-                                stroke="#FF5E5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            </path>
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M22.7879 28.0373C16.7616 28.0373 11.6147 28.9504 11.6147 32.5973C11.6147 36.2423 16.7297 37.1817 22.7879 37.1817C28.8141 37.1817 33.9591 36.2779 33.9591 32.6292C33.9591 28.9804 28.846 28.0373 22.7879 28.0373Z"
-                                stroke="#FF5E5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            </path>
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M22.7876 22.8325C26.742 22.8325 29.9483 19.6281 29.9483 15.6719C29.9483 11.7175 26.742 8.51123 22.7876 8.51123C18.8333 8.51123 15.627 11.7175 15.627 15.6719C15.612 19.6131 18.7939 22.8194 22.7351 22.8325H22.7876Z"
-                                stroke="#FF5E5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            </path>
-                            <path
-                                d="M11.5344 20.974C8.91691 20.6065 6.90504 18.364 6.89941 15.6471C6.89941 12.9696 8.85129 10.7496 11.4107 10.3296"
-                                stroke="#FF5E5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            </path>
-                            <path
-                                d="M8.0825 27.262C5.54937 27.6407 3.78125 28.5276 3.78125 30.3557C3.78125 31.6139 4.61375 32.4314 5.96 32.9451"
-                                stroke="#FF5E5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="total-projects ms-3">
+@push('after-script')
+    <!-- Internal Chart.Bundle js-->
+    <script src="{{ asset('spruha/assets/plugins/chart.js/Chart.bundle.min.js') }}"></script>
 
-                        <span>Total Daur Ulang</span>
-                        <h3 class="text-danger count">5,855k</h3>
-                    </div>
-                </div>
+    <!-- Peity js-->
+    <script src="{{ asset('spruha/assets/plugins/peity/jquery.peity.min.js') }}"></script>
+
+    <!-- Internal Morris js -->
+    <script src="{{ asset('spruha/assets/plugins/raphael/raphael.min.js') }}"></script>
+    <script src="{{ asset('spruha/assets/plugins/morris.js/morris.min.js') }}"></script>
+
+    <!-- Circle Progress js-->
+    <script src="{{ asset('spruha/assets/plugins/circle-progress/circle-progress.min.js') }}"></script>
+    <script src="{{ asset('spruha/assets/js/chart-circle.js') }}"></script>
+
+    <!-- Internal Dashboard js-->
+    <script src="{{ asset('spruha/assets/js/index.js') }}"></script>
+
+    <!-- STICKY JS -->
+    <script src="{{ asset('spruha/assets/js/sticky.js') }}"></script>
+
+    <!-- COLOR THEME JS -->
+    <script src="{{ asset('spruha/assets/js/themeColors.js') }}"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="{{ asset('spruha/assets/js/custom.js') }}"></script>
+
+    <!-- SWITCHER JS -->
+    <script src="{{ asset('spruha/assets/switcher/js/switcher.js') }}"></script>
+@endpush
+
+
+<!-- END SCRIPTS -->
+@section('content')
+    <!-- Page Header -->
+    <div class="page-header">
+        <div>
+            <h2 class="main-content-title tx-24 mg-b-5">Welcome To Dashboard</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Project Dashboard</li>
+            </ol>
+        </div>
+        <div class="d-flex">
+            <div class="justify-content-center">
+                <button type="button" class="btn btn-white btn-icon-text my-2 me-2">
+                    <i class="fe fe-download me-2"></i> Import
+                </button>
+                <button type="button" class="btn btn-white btn-icon-text my-2 me-2">
+                    <i class="fe fe-filter me-2"></i> Filter
+                </button>
+                <button type="button" class="btn btn-primary my-2 btn-icon-text">
+                    <i class="fe fe-download-cloud me-2"></i> Download Report
+                </button>
             </div>
         </div>
     </div>
-    {{-- <div class="col-xl-4 col-lg-5">
-            <div class="card">
-                <div class="card-header border-0">
-                    <h4 class="heading mb-0">Social Networking</h4>
+    <!-- End Page Header -->
+
+    <!--Row-->
+    <div class="row row-sm">
+        <div class="col-sm-12 col-lg-12 col-xl-8">
+
+            <!--Row-->
+            <div class="row row-sm  mt-lg-4">
+                <div class="col-sm-12 col-lg-12 col-xl-12">
+                    <div class="card bg-primary custom-card card-box">
+                        <div class="card-body p-4">
+                            <div class="row align-items-center">
+                                <div class="offset-xl-3 offset-sm-6 col-xl-8 col-sm-6 col-12 img-bg ">
+                                    <h4 class="d-flex  mb-3">
+                                        <span class="font-weight-bold text-white ">Sonia Taylor!</span>
+                                    </h4>
+                                    <p class="tx-white-7 mb-1">You have two projects to finish, you had
+                                        completed <b class="text-warning">57%</b> from your montly
+                                        level,
+                                        Keep going to your level
+                                </div>
+                                <img src="../assets/img/pngs/work3.png" alt="user-img">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body py-0">
-                    <div id="redial"></div>
-                    <div class="text-center">
-                        <h5 class="mb-0">Total sales made week</h5>
-                        <h4>$86</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy.</p>
+            </div>
+            <!--Row -->
+
+            <!--Row-->
+            <div class="row row-sm">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <div class="card-item">
+                                <div class="card-item-icon card-icon">
+                                    <svg class="text-primary" xmlns="http://www.w3.org/2000/svg"
+                                        enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
+                                        <g>
+                                            <rect height="14" opacity=".3" width="14" x="5"
+                                                y="5" />
+                                            <g>
+                                                <rect fill="none" height="24" width="24" />
+                                                <g>
+                                                    <path
+                                                        d="M19,3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.1,3,19,3z M19,19H5V5h14V19z" />
+                                                    <rect height="5" width="2" x="7" y="12" />
+                                                    <rect height="10" width="2" x="15" y="7" />
+                                                    <rect height="3" width="2" x="11" y="14" />
+                                                    <rect height="2" width="2" x="11" y="10" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="card-item-title mb-2">
+                                    <label class="main-content-label tx-13 font-weight-bold mb-1">Total
+                                        Revenue</label>
+                                    <span class="d-block tx-12 mb-0 text-muted">Previous month vs this
+                                        months</span>
+                                </div>
+                                <div class="card-item-body">
+                                    <div class="card-item-stat">
+                                        <h4 class="font-weight-bold">$5,900.00</h4>
+                                        <small><b class="text-success">55%</b> higher</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <div class="card-item">
+                                <div class="card-item-icon card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+                                        width="24">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path
+                                            d="M12 4c-4.41 0-8 3.59-8 8 0 1.82.62 3.49 1.64 4.83 1.43-1.74 4.9-2.33 6.36-2.33s4.93.59 6.36 2.33C19.38 15.49 20 13.82 20 12c0-4.41-3.59-8-8-8zm0 9c-1.94 0-3.5-1.56-3.5-3.5S10.06 6 12 6s3.5 1.56 3.5 3.5S13.94 13 12 13z"
+                                            opacity=".3" />
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z" />
+                                    </svg>
+                                </div>
+                                <div class="card-item-title mb-2">
+                                    <label class="main-content-label tx-13 font-weight-bold mb-1">New
+                                        Employees</label>
+                                    <span class="d-block tx-12 mb-0 text-muted">Employees joined this
+                                        month</span>
+                                </div>
+                                <div class="card-item-body">
+                                    <div class="card-item-stat">
+                                        <h4 class="font-weight-bold">15</h4>
+                                        <small><b class="text-success">5%</b> Increased</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <div class="card-item">
+                                <div class="card-item-icon card-icon">
+                                    <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" height="24"
+                                        viewBox="0 0 24 24" width="24">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path
+                                            d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm1.23 13.33V19H10.9v-1.69c-1.5-.31-2.77-1.28-2.86-2.97h1.71c.09.92.72 1.64 2.32 1.64 1.71 0 2.1-.86 2.1-1.39 0-.73-.39-1.41-2.34-1.87-2.17-.53-3.66-1.42-3.66-3.21 0-1.51 1.22-2.48 2.72-2.81V5h2.34v1.71c1.63.39 2.44 1.63 2.49 2.97h-1.71c-.04-.97-.56-1.64-1.94-1.64-1.31 0-2.1.59-2.1 1.43 0 .73.57 1.22 2.34 1.67 1.77.46 3.66 1.22 3.66 3.42-.01 1.6-1.21 2.48-2.74 2.77z"
+                                            opacity=".3" />
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z" />
+                                    </svg>
+                                </div>
+                                <div class="card-item-title  mb-2">
+                                    <label class="main-content-label tx-13 font-weight-bold mb-1">Total
+                                        Expenses</label>
+                                    <span class="d-block tx-12 mb-0 text-muted">Previous month vs this
+                                        months</span>
+                                </div>
+                                <div class="card-item-body">
+                                    <div class="card-item-stat">
+                                        <h4 class="font-weight-bold">$8,500</h4>
+                                        <small><b class="text-danger">12%</b> decrease</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End row-->
+
+            <!--row-->
+            <div class="row row-sm">
+                <div class="col-sm-12 col-lg-12 col-xl-12">
+                    <div class="card custom-card overflow-hidden">
+                        <div class="card-header border-bottom-0">
+                            <div>
+                                <label class="main-content-label mb-2">Project Budget</label> <span
+                                    class="d-block tx-12 mb-0 text-muted">The Project Budget is a tool
+                                    used by project managers to estimate the total cost of a
+                                    project</span>
+                            </div>
+                        </div>
+                        <div class="card-body ps-0">
+                            <div class>
+                                <div class="container">
+                                    <canvas id="project" class="chart-dropshadow2 ht-250"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- col end -->
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="card custom-card overflow-hidden">
+                        <div class="card-header  border-bottom-0 pb-0">
+                            <div>
+                                <div class="d-md-flex">
+                                    <label class="main-content-label my-auto pt-2">Today tasks</label>
+                                    <div class="ms-auto mt-3 d-flex">
+                                        <div class="me-3 d-flex text-muted tx-13"><span
+                                                class="legend bg-primary rounded-circle"></span>Project
+                                        </div>
+                                        <div class="d-flex text-muted tx-13"><span
+                                                class="legend bg-light rounded-circle"></span>Inprogress
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="d-block tx-12 mt-2 mb-0 text-muted"> UX UI & Backend
+                                    Developement. </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 my-auto">
+                                    <h6 class="mb-3 font-weight-normal">Project-Budget</h6>
+                                    <div class="text-start">
+                                        <h3 class="font-weight-bold me-3 mb-2 text-primary">$5,240</h3>
+                                        <p class="tx-13 my-auto text-muted">May 28 - June 01 (2018)</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 my-auto">
+                                    <div class="forth circle">
+                                        <div class="chart-circle-value circle-style">
+                                            <div class="tx-16 font-weight-bold">75%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- col end -->
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="card custom-card">
+                        <div class="card-header  border-bottom-0 pb-0">
+                            <div>
+                                <div class="d-flex">
+                                    <label class="main-content-label my-auto pt-2">Top Inquiries</label>
+                                </div>
+                                <span class="d-block tx-12 mt-2 mb-0 text-muted"> project work involves
+                                    a group of students investigating . </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mt-1">
+                                <div class="col-5">
+                                    <span class="">Brand identity</span>
+                                </div>
+                                <div class="col-4 my-auto">
+                                    <div class="progress ht-6 my-auto">
+                                        <div class="progress-bar ht-6 wd-80p" role="progressbar" aria-valuenow="15"
+                                            aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex">
+                                        <span class="tx-13"><i
+                                                class="text-success fe fe-arrow-up"></i><b>24.75%</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-5">
+                                    <span class="">UI & UX design</span>
+                                </div>
+                                <div class="col-4 my-auto">
+                                    <div class="progress ht-6 my-auto">
+                                        <div class="progress-bar ht-6 wd-70p" role="progressbar" aria-valuenow="15"
+                                            aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex">
+                                        <span class="tx-13"><i
+                                                class="text-danger fe fe-arrow-down"></i><b>12.34%</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-5">
+                                    <span class="">Product design</span>
+                                </div>
+                                <div class="col-4 my-auto">
+                                    <div class="progress ht-6 my-auto">
+                                        <div class="progress-bar ht-6 wd-40p" role="progressbar" aria-valuenow="15"
+                                            aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-flex">
+                                        <span class="tx-13"><i
+                                                class="text-success  fe fe-arrow-up"></i><b>12.75%</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- col end -->
+                <div class="col-lg-12">
+                    <div class="card custom-card mg-b-20">
+                        <div class="card-body">
+                            <div class="card-header border-bottom-0 pt-0 pe-0 d-flex">
+                                <div>
+                                    <label class="main-content-label mb-2">Tasks</label> <span
+                                        class="d-block tx-12 mb-3 text-muted">A task is accomplished by
+                                        a set deadline, and must contribute toward work-related
+                                        objectives.</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="javascript:void(0)" class="option-dots" data-bs-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"><i
+                                            class="fe fe-more-vertical"></i></a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="javascript:void(0)">Task</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">Team</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">Status</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-cog me-2"></i>
+                                            Settings</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive tasks">
+                                <table class="table card-table table-vcenter text-nowrap mb-0  border">
+                                    <thead>
+                                        <tr>
+                                            <th class="wd-lg-10p">Task</th>
+                                            <th class="wd-lg-20p">Team</th>
+                                            <th class="wd-lg-20p text-center">Open task</th>
+                                            <th class="wd-lg-20p">Prority</th>
+                                            <th class="wd-lg-20p">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="font-weight-semibold d-flex"><label
+                                                    class="ckbox my-auto me-4 mt-1"><input checked=""
+                                                        type="checkbox"><span></span></label><span
+                                                    class="mt-1">Evaluating the design</span></td>
+                                            <td class="text-nowrap">
+                                                <div class="demo-avatar-group my-auto float-end">
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/1.jpg">
+                                                    </div>
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/2.jpg">
+                                                    </div>
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/3.jpg">
+                                                    </div>
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/4.jpg">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">37<i class=""></i></td>
+                                            <td class="text-primary">High</td>
+                                            <td><span class="badge bg-pill bg-primary-light">Completed</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-weight-semibold d-flex"><label
+                                                    class="ckbox my-auto me-4"><input checked=""
+                                                        type="checkbox"><span></span></label><span class="mt-1">
+                                                    Generate ideas for design</span></td>
+                                            <td class="text-nowrap">
+                                                <div class="demo-avatar-group my-auto float-end">
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/5.jpg">
+                                                    </div>
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/6.jpg">
+                                                    </div>
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/7.jpg">
+                                                    </div>
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/8.jpg">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">37<i class=""></i></td>
+                                            <td class="text-secondary">Normal</td>
+                                            <td><span class="badge bg-pill bg-warning-light">Pending</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-weight-semibold d-flex"><label
+                                                    class="ckbox my-auto me-4"><input
+                                                        type="checkbox"><span></span></label><span class="mt-1">Define
+                                                    the problem</span></td>
+                                            <td class="text-nowrap">
+                                                <div class="demo-avatar-group my-auto float-end">
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/11.jpg">
+                                                    </div>
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/12.jpg">
+                                                    </div>
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/9.jpg">
+                                                    </div>
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/10.jpg">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">37<i class=""></i></td>
+                                            <td class="text-warning">Low</td>
+                                            <td><span class="badge bg-pill bg-primary-light">Completed</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-weight-semibold d-flex"><label
+                                                    class="ckbox my-auto me-4"><input
+                                                        type="checkbox"><span></span></label><span
+                                                    class="mt-1">Empathize with users</span></td>
+                                            <td class="text-nowrap">
+                                                <div class="demo-avatar-group my-auto float-end">
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/7.jpg">
+                                                    </div>
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/9.jpg">
+                                                    </div>
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/11.jpg">
+                                                    </div>
+                                                    <div class="main-img-user avatar-sm">
+                                                        <img alt="avatar" class="rounded-circle"
+                                                            src="../assets/img/users/12.jpg">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">37<i class=""></i></td>
+                                            <td class="text-primary">High</td>
+                                            <td><span class="badge bg-pill bg-danger-light">Rejected</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- col end -->
+            </div><!-- Row end -->
+        </div><!-- col end -->
+        <div class="col-sm-12 col-lg-12 col-xl-4 mt-xl-4">
+            <div class="card custom-card card-dashboard-calendar pb-0">
+                <label class="main-content-label mb-2 pt-1">Recent Transactions</label>
+                <span class="d-block tx-12 mb-2 text-muted">Projects where development work is on
+                    completion</span>
+                <table class="table table-hover m-b-0 transcations mt-2">
+                    <tbody>
+                        <tr>
+                            <td class="wd-5p">
+                                <div class="main-img-user avatar-md">
+                                    <img alt="avatar" class="rounded-circle me-3" src="../assets/img/users/5.jpg">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-middle ms-3">
+                                    <div class="d-inline-block">
+                                        <h6 class="mb-1">Flicker</h6>
+                                        <p class="mb-0 tx-13 text-muted">App improvement</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-end">
+                                <div class="d-inline-block">
+                                    <h6 class="mb-2 tx-15 font-weight-semibold">$45.234<i
+                                            class="fas fa-level-up-alt ms-2 text-success m-l-10"></i>
+                                    </h6>
+                                    <p class="mb-0 tx-11 text-muted">12 Jan 2020</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="wd-5p">
+                                <div class="main-img-user avatar-md">
+                                    <img alt="avatar" class="rounded-circle me-3" src="../assets/img/users/6.jpg">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-middle ms-3">
+                                    <div class="d-inline-block">
+                                        <h6 class="mb-1">Intoxica</h6>
+                                        <p class="mb-0 tx-13 text-muted">Milestone</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-end">
+                                <div class="d-inline-block">
+                                    <h6 class="mb-2 tx-15 font-weight-semibold">$23.452<i
+                                            class="fas fa-level-down-alt ms-2 text-danger m-l-10"></i>
+                                    </h6>
+                                    <p class="mb-0 tx-11 text-muted">23 Jan 2020</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="wd-5p">
+                                <div class="main-img-user avatar-md">
+                                    <img alt="avatar" class="rounded-circle me-3" src="../assets/img/users/7.jpg">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-middle ms-3">
+                                    <div class="d-inline-block">
+                                        <h6 class="mb-1">Digiwatt</h6>
+                                        <p class="mb-0 tx-13 text-muted">Sales executive</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-end">
+                                <div class="d-inline-block">
+                                    <h6 class="mb-2 tx-15 font-weight-semibold">$78.001<i
+                                            class="fas fa-level-down-alt ms-2 text-danger m-l-10"></i>
+                                    </h6>
+                                    <p class="mb-0 tx-11 text-muted">4 Apr 2020</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="wd-5p">
+                                <div class="main-img-user avatar-md">
+                                    <img alt="avatar" class="rounded-circle me-3" src="../assets/img/users/8.jpg">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-middle ms-3">
+                                    <div class="d-inline-block">
+                                        <h6 class="mb-1">Flicker</h6>
+                                        <p class="mb-0 tx-13 text-muted">Milestone2</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-end">
+                                <div class="d-inline-block">
+                                    <h6 class="mb-2 tx-15 font-weight-semibold">$37.285<i
+                                            class="fas fa-level-up-alt ms-2 text-success m-l-10"></i>
+                                    </h6>
+                                    <p class="mb-0 tx-11 text-muted">4 Apr 2020</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="wd-5p pb-0">
+                                <div class="main-img-user avatar-md">
+                                    <img alt="avatar" class="rounded-circle me-3" src="../assets/img/users/4.jpg">
+                                </div>
+                            </td>
+                            <td class="pb-0">
+                                <div class="d-flex align-middle ms-3">
+                                    <div class="d-inline-block">
+                                        <h6 class="mb-1">Flicker</h6>
+                                        <p class="mb-0 tx-13 text-muted">App improvement</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-end pb-0">
+                                <div class="d-inline-block">
+                                    <h6 class="mb-2 tx-15 font-weight-semibold">$25.341<i
+                                            class="fas fa-level-down-alt ms-2 text-danger m-l-10"></i>
+                                    </h6>
+                                    <p class="mb-0 tx-11 text-muted">4 Apr 2020</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card custom-card">
+                <div class="card-body">
+                    <div class="row row-sm">
+                        <div class="col-6">
+                            <div class="card-item-title">
+                                <label class="main-content-label tx-13 font-weight-bold mb-2">Project
+                                    Launch</label>
+                                <span class="d-block tx-12 mb-0 text-muted">the project is going to
+                                    launch</span>
+                            </div>
+                            <p class="mb-0 tx-24 mt-2"><b class="text-primary">145 days</b></p>
+                            <a href="javascript:void(0)" class="text-muted">12 Monday, Oct 2020 </a>
+                        </div>
+                        <div class="col-6">
+                            <img src="../assets/img/pngs/work.png" alt="image" class="best-emp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <div class="card-header border-bottom-0 pb-0 d-flex ps-3 ms-1">
+                    <div>
+                        <label class="main-content-label mb-2 pt-2">On goiong projects</label>
+                        <span class="d-block tx-12 mb-2 text-muted">Projects where development work is
+                            on completion</span>
+                    </div>
+                </div>
+                <div class="card-body pt-2 mt-0">
+                    <div class="list-card">
+                        <div class="d-flex">
+                            <div class="demo-avatar-group my-auto float-end">
+                                <div class="main-img-user avatar-xs">
+                                    <img alt="avatar" class="rounded-circle" src="../assets/img/users/1.jpg">
+                                </div>
+                                <div class="main-img-user avatar-xs">
+                                    <img alt="avatar" class="rounded-circle" src="../assets/img/users/2.jpg">
+                                </div>
+                                <div class="main-img-user avatar-xs">
+                                    <img alt="avatar" class="rounded-circle" src="../assets/img/users/3.jpg">
+                                </div>
+                                <div class="main-img-user avatar-xs">
+                                    <img alt="avatar" class="rounded-circle" src="../assets/img/users/4.jpg">
+                                </div>
+                                <div class="">Design team</div>
+                            </div>
+                            <div class="ms-auto float-end">
+                                <div class="">
+                                    <a href="javascript:void(0)" class="option-dots" data-bs-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"><i
+                                            class="fe fe-more-horizontal"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a class="dropdown-item" href="javascript:void(0)">Today</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">Last Week</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">Last Month</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">Last Year</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item mt-4">
+                            <div class="card-item-icon bg-transparent card-icon">
+                                <span class="peity-donut"
+                                    data-peity='{ "fill": ["#6259ca", "rgba(204, 204, 204,0.3)"], "innerRadius": 15, "radius": 20}'>6/7</span>
+                            </div>
+                            <div class="card-item-body">
+                                <div class="card-item-stat">
+                                    <small class="tx-10 text-primary font-weight-semibold">25 August
+                                        2020</small>
+                                    <h6 class=" mt-2">Mobile app design</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-card mb-0">
+                        <div class="d-flex">
+                            <div class="demo-avatar-group my-auto float-end">
+                                <div class="main-img-user avatar-xs">
+                                    <img alt="avatar" class="rounded-circle" src="../assets/img/users/5.jpg">
+                                </div>
+                                <div class="main-img-user avatar-xs">
+                                    <img alt="avatar" class="rounded-circle" src="../assets/img/users/6.jpg">
+                                </div>
+                                <div class="main-img-user avatar-xs">
+                                    <img alt="avatar" class="rounded-circle" src="../assets/img/users/7.jpg">
+                                </div>
+                                <div class="main-img-user avatar-xs">
+                                    <img alt="avatar" class="rounded-circle" src="../assets/img/users/8.jpg">
+                                </div>
+                                <div class="">Design team</div>
+                            </div>
+                            <div class="ms-auto float-end">
+                                <div class="">
+                                    <a href="javascript:void(0)" class="option-dots" data-bs-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"><i
+                                            class="fe fe-more-horizontal"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a class="dropdown-item" href="javascript:void(0)">Today</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">Last Week</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">Last Month</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">Last Year</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item mt-4">
+                            <div class="card-item-icon bg-transparent card-icon">
+                                <span class="peity-donut"
+                                    data-peity='{ "fill": ["#6259ca", "rgba(204, 204, 204,0.3)"], "innerRadius": 15, "radius": 20}'>5/7</span>
+                            </div>
+                            <div class="card-item-body">
+                                <div class="card-item-stat">
+                                    <small class="tx-10 text-primary font-weight-semibold">12 JUNE
+                                        2020</small>
+                                    <h6 class=" mt-2">Website Redesign</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <div class="card-body">
+                    <div class="d-flex">
+                        <label class="main-content-label my-auto">Website Design</label>
+                        <div class="ms-auto  d-flex">
+                            <div class="me-3 d-flex text-muted tx-13">Running</div>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <div>
+                            <span class="tx-15 text-muted">Task completed : 7/10</span>
+                        </div>
+                        <div class="container mt-2 mb-2">
+                            <canvas id="bar-chart" class="ht-180"></canvas>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-sm-4 tg-base">
-                            <div class="card text-center">
-                                <div class="card-body p-2">
-                                    <span class="mb-1 d-block">Target</span>
-                                    <h4 class="mb-0"><i class="fa-solid fa-arrow-up me-1 text-success"></i>$15k</h4>
+                        <div class="col">
+                            <div class="mt-4">
+                                <div class="d-flex mb-2">
+                                    <h5 class="tx-15 my-auto text-muted font-weight-normal">Client :
+                                    </h5>
+                                    <h5 class="tx-15 my-auto ms-3">John Deo</h5>
+                                </div>
+                                <div class="d-flex mb-0">
+                                    <h5 class="tx-13 my-auto text-muted font-weight-normal">Deadline :
+                                    </h5>
+                                    <h5 class="tx-13 my-auto text-muted ms-2">25 Dec 2020</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-sm-4 tg-base">
-                            <div class="card text-center">
-                                <div class="card-body p-2">
-                                    <span class="mb-1 d-block">Last week</span>
-                                    <h4 class="mb-0"><i class="fa-solid fa-arrow-down me-1 text-danger"></i>$55k</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-sm-4 tg-base">
-                            <div class="card text-center">
-                                <div class="card-body p-2">
-                                    <span class="mb-1 d-block">Last Year</span>
-                                    <h4 class="mb-0"><i class="fa-solid fa-arrow-up me-1 text-success"></i>$65k</h4>
+                        <div class="col col-auto">
+                            <div class="mt-3">
+                                <div class="">
+                                    <img alt="" class="ht-50" src="../assets/img/media/project-logo.png">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> --}}
-    <div class="col-xl-12 col-lg-12">
-        <div class="card overflow-hidden">
-            <div class="card-header border-0 pb-0 flex-wrap">
-                <h4 class="heading mb-0">Projects Overview</h4>
-                <ul class="nav nav-pills mix-chart-tab" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" data-series="week" id="pills-week-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-week" type="button" role="tab"
-                            aria-selected="true">Week</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" data-series="month" id="pills-month-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-month" type="button" role="tab"
-                            aria-selected="false">Month</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" data-series="year" id="pills-year-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-year" type="button" role="tab"
-                            aria-selected="false">Year</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" data-series="all" id="pills-all-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-all" type="button" role="tab" aria-selected="false">All</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="card-body custome-tooltip p-0">
-                <div id="overiewChart"></div>
-                <div class="ttl-project ds-chart">
-                    <div class="pr-data">
-                        <h5>12,721</h5>
-                        <span>Number of Projects</span>
-                    </div>
-                    <div class="pr-data">
-                        <h5 class="text-primary">721</h5>
-                        <span>Active Projects</span>
-                    </div>
-                    <div class="pr-data">
-                        <h5>$2,50,523</h5>
-                        <span>Revenue</span>
-                    </div>
-                    <div class="pr-data">
-                        <h5 class="text-success">12,275h</h5>
-                        <span>Working Hours</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div><!-- col end -->
     </div>
-    </div>
+    <!-- Row end -->
 @endsection
-
-@push('before-style')
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-
-    <link href="{{ asset('yash/vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('yash/vendor/swiper/css/swiper-bundle.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('yash/vendor/swiper/css/swiper-bundle.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('yash/cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.css') }}">
-    <link href="{{ asset('yash/vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('yash/cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('yash/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css') }}"
-        rel="stylesheet">
-@endpush
-
-@push('after-script')
-    <script src="{{ asset('yash/vendor/chart.js/Chart.bundle.min.js') }}"></script>
-    <script src="{{ asset('yash/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
-    <script src="{{ asset('yash/vendor/apexchart/apexchart.js') }}"></script>
-    <script src="{{ asset('yash/js/dashboard/dashboard-1.js') }}"></script>
-    <script src="{{ asset('yash/vendor/draggable/draggable.js') }}"></script>
-    <script src="{{ asset('yash/vendor/swiper/js/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('yash/vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('yash/vendor/datatables/js/dataTables.buttons.min.js') }}"></script>
-    <script src="{{ asset('yash/vendor/datatables/js/buttons.html5.min.js') }}"></script>
-    <script src="{{ asset('yash/vendor/datatables/js/jszip.min.js') }}"></script>
-    <script src="{{ asset('yash/js/plugins-init/datatables.init.js') }}"></script>
-    <script src="{{ asset('yash/vendor/bootstrap-datetimepicker/js/moment.js') }}"></script>
-    <script src="{{ asset('yash/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js') }}"></script>
-    <script src="{{ asset('yash/vendor/jqvmap/js/jquery.vmap.min.js') }}"></script>
-    <script src="{{ asset('yash/vendor/jqvmap/js/jquery.vmap.world.js') }}"></script>
-    <script src="{{ asset('yash/vendor/jqvmap/js/jquery.vmap.usa.js') }}"></script>
-@endpush

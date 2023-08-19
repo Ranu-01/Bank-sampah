@@ -1,118 +1,429 @@
-<div class="deznav">
-    <div class="deznav-scroll">
-        <ul class="metismenu" id="menu">
-            <li class="menu-title">DASHBOARD</li>
-            <li>
-                <a href="{{ route('dashboard.index') }}" aria-expanded="false">
-                    <div class="menu-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9.13478 20.7733V17.7156C9.13478 16.9351 9.77217 16.3023 10.5584 16.3023H13.4326C13.8102 16.3023 14.1723 16.4512 14.4393 16.7163C14.7063 16.9813 14.8563 17.3408 14.8563 17.7156V20.7733C14.8539 21.0978 14.9821 21.4099 15.2124 21.6402C15.4427 21.8705 15.756 22 16.0829 22H18.0438C18.9596 22.0024 19.8388 21.6428 20.4872 21.0008C21.1356 20.3588 21.5 19.487 21.5 18.5778V9.86686C21.5 9.13246 21.1721 8.43584 20.6046 7.96467L13.934 2.67587C12.7737 1.74856 11.1111 1.7785 9.98539 2.74698L3.46701 7.96467C2.87274 8.42195 2.51755 9.12064 2.5 9.86686V18.5689C2.5 20.4639 4.04738 22 5.95617 22H7.87229C8.55123 22 9.103 21.4562 9.10792 20.7822L9.13478 20.7733Z"
-                                fill="#90959F" />
-                        </svg>
-                    </div>
-                    <span class="nav-text">Dashboard</span>
+<div class="sticky">
+    <div class="main-menu main-sidebar main-sidebar-sticky side-menu">
+        <div class="main-sidebar-header main-container-1 active">
+            <div class="sidemenu-logo">
+                <a class="main-logo" href="index.html">
+                    <img src="../assets/img/brand/logo-light.png" class="header-brand-img desktop-logo" alt="logo">
+                    <img src="../assets/img/brand/icon-light.png" class="header-brand-img icon-logo" alt="logo">
+                    <img src="../assets/img/brand/logo.png" class="header-brand-img desktop-logo theme-logo"
+                        alt="logo">
+                    <img src="../assets/img/brand/icon.png" class="header-brand-img icon-logo theme-logo"
+                        alt="logo">
                 </a>
-            </li>
-            <li class="menu-title">MASTER DATA</li>
-            <li>
-                <a href="{{ route('nasabah.index') }}" aria-expanded="false">
-                    <div class="menu-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.5">
-                                <path
-                                    d="M9.34933 14.8577C5.38553 14.8577 2 15.47 2 17.9174C2 20.3666 5.364 21 9.34933 21C13.3131 21 16.6987 20.3877 16.6987 17.9404C16.6987 15.4911 13.3347 14.8577 9.34933 14.8577Z"
-                                    fill="white" />
-                                <path opacity="0.4"
-                                    d="M9.34935 12.5248C12.049 12.5248 14.2124 10.4062 14.2124 7.76241C14.2124 5.11865 12.049 3 9.34935 3C6.65072 3 4.48633 5.11865 4.48633 7.76241C4.48633 10.4062 6.65072 12.5248 9.34935 12.5248Z"
-                                    fill="white" />
-                                <path opacity="0.4"
-                                    d="M16.1734 7.84876C16.1734 9.19508 15.7605 10.4513 15.0364 11.4948C14.9611 11.6022 15.0276 11.7468 15.1587 11.7698C15.3407 11.7996 15.5276 11.8178 15.7184 11.8216C17.6167 11.8705 19.3202 10.6736 19.7908 8.87119C20.4885 6.19677 18.4415 3.79544 15.8339 3.79544C15.5511 3.79544 15.2801 3.82419 15.0159 3.87689C14.9797 3.88456 14.9405 3.9018 14.921 3.93247C14.8955 3.97176 14.9141 4.02254 14.9395 4.05608C15.7233 5.13217 16.1734 6.44208 16.1734 7.84876Z"
-                                    fill="white" />
-                                <path
-                                    d="M21.7791 15.1693C21.4318 14.444 20.5932 13.9466 19.3173 13.7023C18.7155 13.5586 17.0854 13.3545 15.5697 13.3832C15.5472 13.3861 15.5345 13.4014 15.5325 13.411C15.5296 13.4263 15.5365 13.4493 15.5658 13.4656C16.2664 13.8048 18.9738 15.2805 18.6333 18.3928C18.6187 18.5289 18.7292 18.6439 18.8672 18.6247C19.5335 18.5318 21.2478 18.1705 21.7791 17.0475C22.0737 16.4534 22.0737 15.7634 21.7791 15.1693Z"
-                                    fill="white" />
-                            </g>
-                        </svg>
-                    </div>
-                    <span class="nav-text">Data Nasabah</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ route('kategori-sampah.index') }}" aria-expanded="false">
-                    <div class="menu-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.5">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M15.2428 4.73756C15.2428 6.95855 17.0459 8.75902 19.2702 8.75902C19.5151 8.75782 19.7594 8.73431 20 8.68878V16.6615C20 20.0156 18.0215 22 14.6624 22H7.34636C3.97851 22 2 20.0156 2 16.6615V9.3561C2 6.00195 3.97851 4 7.34636 4H15.3131C15.2659 4.243 15.2423 4.49001 15.2428 4.73756ZM13.15 14.8966L16.0078 11.2088V11.1912C16.2525 10.8625 16.1901 10.3989 15.8671 10.1463C15.7108 10.0257 15.5122 9.97345 15.3167 10.0016C15.1211 10.0297 14.9453 10.1358 14.8295 10.2956L12.4201 13.3951L9.6766 11.2351C9.51997 11.1131 9.32071 11.0592 9.12381 11.0856C8.92691 11.1121 8.74898 11.2166 8.63019 11.3756L5.67562 15.1863C5.57177 15.3158 5.51586 15.4771 5.51734 15.6429C5.5002 15.9781 5.71187 16.2826 6.03238 16.3838C6.35288 16.485 6.70138 16.3573 6.88031 16.0732L9.35125 12.8771L12.0948 15.0283C12.2508 15.1541 12.4514 15.2111 12.6504 15.1863C12.8494 15.1615 13.0297 15.0569 13.15 14.8966Z"
-                                    fill="white" />
-                                <circle opacity="0.4" cx="19.5" cy="4.5" r="2.5" fill="white" />
-                            </g>
-                        </svg>
-                    </div>
-                    <span class="nav-text">Data Kategori</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ route('sampah.index') }}" aria-expanded="false">
-                    <div class="menu-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.5">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M15.2428 4.73756C15.2428 6.95855 17.0459 8.75902 19.2702 8.75902C19.5151 8.75782 19.7594 8.73431 20 8.68878V16.6615C20 20.0156 18.0215 22 14.6624 22H7.34636C3.97851 22 2 20.0156 2 16.6615V9.3561C2 6.00195 3.97851 4 7.34636 4H15.3131C15.2659 4.243 15.2423 4.49001 15.2428 4.73756ZM13.15 14.8966L16.0078 11.2088V11.1912C16.2525 10.8625 16.1901 10.3989 15.8671 10.1463C15.7108 10.0257 15.5122 9.97345 15.3167 10.0016C15.1211 10.0297 14.9453 10.1358 14.8295 10.2956L12.4201 13.3951L9.6766 11.2351C9.51997 11.1131 9.32071 11.0592 9.12381 11.0856C8.92691 11.1121 8.74898 11.2166 8.63019 11.3756L5.67562 15.1863C5.57177 15.3158 5.51586 15.4771 5.51734 15.6429C5.5002 15.9781 5.71187 16.2826 6.03238 16.3838C6.35288 16.485 6.70138 16.3573 6.88031 16.0732L9.35125 12.8771L12.0948 15.0283C12.2508 15.1541 12.4514 15.2111 12.6504 15.1863C12.8494 15.1615 13.0297 15.0569 13.15 14.8966Z"
-                                    fill="white" />
-                                <circle opacity="0.4" cx="19.5" cy="4.5" r="2.5" fill="white" />
-                            </g>
-                        </svg>
-                    </div>
-                    <span class="nav-text">Data Sampah</span>
-                </a>
-            </li>
-            <li><a href="{{ route('monitoring.index') }}" aria-expanded="false">
-                    <div class="menu-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.5">
-                                <path opacity="0.4"
-                                    d="M10.0833 15.9579H3.50777C2.67555 15.9579 2 16.6217 2 17.4393C2 18.2558 2.67555 18.9206 3.50777 18.9206H10.0833C10.9155 18.9206 11.5911 18.2558 11.5911 17.4393C11.5911 16.6217 10.9155 15.9579 10.0833 15.9579Z"
-                                    fill="white" />
-                                <path opacity="0.4"
-                                    d="M22 6.37855C22 5.56202 21.3244 4.89832 20.4933 4.89832H13.9178C13.0856 4.89832 12.41 5.56202 12.41 6.37855C12.41 7.19617 13.0856 7.85988 13.9178 7.85988H20.4933C21.3244 7.85988 22 7.19617 22 6.37855Z"
-                                    fill="white" />
-                                <path
-                                    d="M8.87774 6.37856C8.87774 8.24523 7.33886 9.75821 5.43887 9.75821C3.53999 9.75821 2 8.24523 2 6.37856C2 4.51298 3.53999 3 5.43887 3C7.33886 3 8.87774 4.51298 8.87774 6.37856Z"
-                                    fill="white" />
-                                <path
-                                    d="M22 17.3992C22 19.2648 20.4611 20.7778 18.5611 20.7778C16.6622 20.7778 15.1223 19.2648 15.1223 17.3992C15.1223 15.5325 16.6622 14.0196 18.5611 14.0196C20.4611 14.0196 22 15.5325 22 17.3992Z"
-                                    fill="white" />
-                            </g>
-                        </svg>
-                    </div>
-                    <span class="nav-text">Monitoring</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ route('transaksi.index') }}" aria-expanded="false">
-                    <div class="menu-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.5">
-                                <path opacity="0.4"
-                                    d="M16.191 2H7.81C4.77 2 3 3.78 3 6.83V17.16C3 20.26 4.77 22 7.81 22H16.191C19.28 22 21 20.26 21 17.16V6.83C21 3.78 19.28 2 16.191 2Z"
-                                    fill="white" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M8.08002 6.64999V6.65999C7.64902 6.65999 7.30002 7.00999 7.30002 7.43999C7.30002 7.86999 7.64902 8.21999 8.08002 8.21999H11.069C11.5 8.21999 11.85 7.86999 11.85 7.42899C11.85 6.99999 11.5 6.64999 11.069 6.64999H8.08002ZM15.92 12.74H8.08002C7.64902 12.74 7.30002 12.39 7.30002 11.96C7.30002 11.53 7.64902 11.179 8.08002 11.179H15.92C16.35 11.179 16.7 11.53 16.7 11.96C16.7 12.39 16.35 12.74 15.92 12.74ZM15.92 17.31H8.08002C7.78002 17.35 7.49002 17.2 7.33002 16.95C7.17002 16.69 7.17002 16.36 7.33002 16.11C7.49002 15.85 7.78002 15.71 8.08002 15.74H15.92C16.319 15.78 16.62 16.12 16.62 16.53C16.62 16.929 16.319 17.27 15.92 17.31Z"
-                                    fill="white" />
-                            </g>
-                        </svg>
-                    </div>
-                    <span class="nav-text">Data Transaksi</span>
-                </a>
-            </li>
-        </ul>
+            </div>
+            <div class="main-sidebar-body main-body-1">
+                <div class="slide-left disabled" id="slide-left"><i class="fe fe-chevron-left"></i></div>
+                <ul class="menu-nav nav">
+                    <li class="nav-header"><span class="nav-label">Dashboard</span></li>
+                    <li class="nav-item {{ Request::routeIs('dashboard.index') ? 'active' : '' }}">
+                        <a class="nav-link active" href="{{ route('dashboard.index') }}">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-home sidemenu-icon menu-icon"></i>
+                            <span class="sidemenu-label">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-header"><span class="nav-label">Master Data</span></li>
+                    <li
+                        class="nav-item {{ Request::routeIs('kategori-sampah.index') || Request::routeIs('kategori-sampah.edit') || Request::routeIs('kategori-sampah.create') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{ route('kategori-sampah.index') }}">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="mdi mdi-animation sidemenu-icon menu-icon"></i>
+                            <span class="sidemenu-label">Kategori Sampah</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="landing.html">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="mdi mdi-archive sidemenu-icon menu-icon"></i>
+                            <span class="sidemenu-label">Sampah</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="landing.html">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="mdi mdi-account-multiple sidemenu-icon menu-icon"></i>
+                            <span class="sidemenu-label">Nasabah</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="landing.html">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-layout sidemenu-icon menu-icon"></i>
+                            <span class="sidemenu-label">Petugas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="landing.html">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-layout sidemenu-icon menu-icon"></i>
+                            <span class="sidemenu-label">RT</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="landing.html">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-layout sidemenu-icon menu-icon"></i>
+                            <span class="sidemenu-label">RW</span>
+                        </a>
+                    </li>
+                    <li class="nav-header"><span class="nav-label">Applications</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link with-sub" href="javascript:void(0)">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-write sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Apps</span>
+                            <i class="angle fe fe-chevron-right"></i>
+                        </a>
+                        <ul class="nav-sub">
+                            <li class="side-menu-label1"><a href="javascript:void(0)">Apps</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="widgets.html">Widgets</a></li>
+                            <li class="nav-sub-item">
+                                <a class="nav-sub-link sub-with-sub" href="javascript:void(0)">
+                                    <span class="sidemenu-label">Mail</span>
+                                    <i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="sub-nav-sub">
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="mail-inbox.html">Mail
+                                            Inbox</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="viewmail.html">View
+                                            Mail</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="mail-compose.html">Mail
+                                            Compose</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-sub-item">
+                                <a class="nav-sub-link sub-with-sub" href="javascript:void(0)">
+                                    <span class="sidemenu-label">Maps</span>
+                                    <i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="sub-nav-sub">
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="map-mapel.html">Mapel
+                                            Maps</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="map-vector.html">Vector
+                                            Maps</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-sub-item">
+                                <a class="nav-sub-link sub-with-sub" href="javascript:void(0)">
+                                    <span class="sidemenu-label">Tables</span>
+                                    <i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="sub-nav-sub">
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="table-basic.html">Basic
+                                            Tables</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="table-data.html">Data
+                                            Tables</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-sub-item">
+                                <a class="nav-sub-link sub-with-sub" href="javascript:void(0)">
+                                    <span class="sidemenu-label">Blog</span>
+                                    <i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="sub-nav-sub">
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="blog.html">Blog Page</a>
+                                    </li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="blog-details.html">Blog
+                                            Details</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="blog-post.html">Blog
+                                            Post</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-sub-item">
+                                <a class="nav-sub-link sub-with-sub" href="javascript:void(0)">
+                                    <span class="sidemenu-label">File Manager</span>
+                                    <i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="sub-nav-sub">
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="filemanager.html">File
+                                            Manager</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link"
+                                            href="filemanager-list.html">File Manager List</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="file-details.html">File
+                                            Details</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link"
+                                            href="file-attachments.html">File Attachments</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-sub-item">
+                                <a class="nav-sub-link sub-with-sub" href="javascript:void(0)">
+                                    <span class="sidemenu-label">Icons</span>
+                                    <i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="sub-nav-sub">
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="icons.html">Font
+                                            Awesome</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="icons2.html">Material
+                                            Design Icons</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="icons3.html">Simple Line
+                                            Icons</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="icons4.html">Feather
+                                            Icons</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="icons5.html">Ionic
+                                            Icons</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="icons6.html">Flag
+                                            Icons</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="icons7.html">Pe7 Icons</a>
+                                    </li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="icons8.html">Themify
+                                            Icons</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="icons9.html">Typicons
+                                            Icons</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="icons10.html">Weather
+                                            Icons</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="icons11.html">Material
+                                            Icons</a></li>
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="icons12.html">Bootstrap
+                                            Icons</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-header"><span class="nav-label">Components</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link with-sub" href="javascript:void(0)">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-package sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Elements</span>
+                            <i class="angle fe fe-chevron-right"></i>
+                        </a>
+                        <ul class="nav-sub">
+                            <li class="side-menu-label1"><a href="javascript:void(0)">Elements</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="accordions.html">Accordions</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="alerts.html">Alerts</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="avatars.html">Avatars</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="breadcrumbs.html">Breadcrumbs</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="buttons.html">Buttons</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="badges.html">Badges</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="dropdowns.html">Dropdowns</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="thumbnails.html">Thumbnails</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="list-groups.html">List Groups</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="navigations.html">Navigations</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="paginations.html">Paginations</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="popovers.html">Popovers</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="progress.html">Progress</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="spinners.html">Spinners</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="media-object.html">Media
+                                    Objects</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="typography.html">Typography</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="tooltips.html">Tooltips</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="toast.html">Toast</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="tags.html">Tags</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="tabs.html">Tabs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link with-sub" href="javascript:void(0)">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-briefcase sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">AdvancedUI</span>
+                            <i class="angle fe fe-chevron-right"></i>
+                        </a>
+                        <ul class="nav-sub">
+                            <li class="side-menu-label1"><a href="javascript:void(0)">Advanced UI</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="carousel.html">Carousel</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="collapse.html">Collapse</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="chat.html">Chat</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="cards-page.html">Cards</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="calendar.html">Calendar</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="contacts.html">Contacts</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="modals.html">Modals</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="timeline.html">Timeline</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="draggablecards.html">Darggable
+                                    Cards</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="sweet-alerts.html">Sweet
+                                    Alerts</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="ratings.html">Ratings</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="search.html">Search</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="userlist.html">Userlist</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link"
+                                    href="notifications.html">Notifications</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="treeview.html">Treeview</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-header"><span class="nav-label">Other Pages</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link with-sub" href="javascript:void(0)">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-palette sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label ">Pages</span>
+                            <i class="angle fe fe-chevron-right"></i>
+                        </a>
+                        <ul class="nav-sub">
+                            <li class="side-menu-label1"><a href="javascript:void(0)">Pages</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="profile.html">Profile</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="aboutus.html">About Us</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="settings.html">Settings</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="invoice.html">Invoice</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="pricing.html">Pricing</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="gallery.html">Gallery</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link"
+                                    href="notifications-list.html">Notifications List</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="faqs.html">Faqs</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="success-message.html">Success
+                                    Message</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="danger-message.html">Danger
+                                    Message</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="warning-message.html">Warning
+                                    Message</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="emptypage.html">Empty Page</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="switcher.html">Switcher Page</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link with-sub" href="javascript:void(0)">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-shield sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Utilities</span>
+                            <i class="angle fe fe-chevron-right"></i>
+                        </a>
+                        <ul class="nav-sub">
+                            <li class="side-menu-label1"><a href="javascript:void(0)">Utilities</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="backgrounds.html">Backgrounds</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="borders.html">Borders</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="display.html">Display</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="flex.html">Flex</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="height.html">Height</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="margin.html">Margin</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="padding.html">Padding</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="position.html">Position</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="width.html">Width</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="extras.html">Extras</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link with-sub" href="javascript:void(0)">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-menu sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Submenu</span>
+                            <i class="angle fe fe-chevron-right"></i>
+                        </a>
+                        <ul class="nav-sub">
+                            <li class="side-menu-label1"><a href="javascript:void(0)">Submenu</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="javascript:void(0)">Submenu-01</a>
+                            </li>
+                            <li class="nav-sub-item">
+                                <a class="nav-sub-link sub-with-sub" href="javascript:void(0)">
+                                    <span class="sidemenu-label">Submenu-02</span>
+                                    <i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="sub-nav-sub">
+                                    <li class="nav-sub-item"><a class="nav-sub-link"
+                                            href="javascript:void(0)">Level-01</a></li>
+                                    <li class="nav-sub-item">
+                                        <a class="nav-sub-link sub-with-sub" href="javascript:void(0)">
+                                            <span class="sidemenu-label">Level-02</span>
+                                            <i class="angle fe fe-chevron-right"></i>
+                                        </a>
+                                        <ul class="sub-nav-sub">
+                                            <li class="nav-sub-item"><a class="nav-sub-link"
+                                                    href="javascript:void(0)">Level-11</a></li>
+                                            <li class="nav-sub-item"><a class="nav-sub-link"
+                                                    href="javascript:void(0)">Level-12</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link with-sub" href="javascript:void(0)">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-lock sidemenu-icon menu-icon"></i>
+                            <span class="sidemenu-label">Authentication</span>
+                            <i class="angle fe fe-chevron-right"></i>
+                        </a>
+                        <ul class="nav-sub">
+                            <li class="side-menu-label1"><a href="javascript:void(0)">Authentication</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="signin.html">Sign In</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="signup.html">Sign Up</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="forgot.html">Forgot Password</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="reset.html">Reset Password</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="lockscreen.html">Lockscreen</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link"
+                                    href="underconstruction.html">UnderConstruction</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="error404.html">404 Error</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="error500.html">500 Error</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-header"><span class="nav-label">Forms &amp; Charts</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link with-sub" href="javascript:void(0)">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-receipt sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Forms</span>
+                            <span class="badge bg-info side-badge">7</span>
+                        </a>
+                        <ul class="nav-sub">
+                            <li class="side-menu-label1"><a href="javascript:void(0)">Forms</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="form-elements.html">Form
+                                    Elements</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="form-advanced.html">Advanced
+                                    Forms</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="form-layouts.html">Form
+                                    Layouts</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="form-validations.html">Form
+                                    Validations</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="form-wizards.html">Form
+                                    Wizards</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="form-editor.html">WYSIWYG
+                                    Editor</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="form-element-sizes.html">Form
+                                    Element Sizes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link with-sub" href="javascript:void(0)">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-bar-chart-alt sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Charts</span>
+                            <span class="badge bg-danger side-badge">5</span>
+                        </a>
+                        <ul class="nav-sub">
+                            <li class="side-menu-label1"><a href="javascript:void(0)">Charts</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="chart-morris.html">Morris
+                                    Charts</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="chart-flot.html">Flot Charts</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="chart-chartjs.html">ChartJS</a>
+                            </li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="chart-spark-peity.html">Sparkline
+                                    &amp; Peity</a></li>
+                            <li class="nav-sub-item"><a class="nav-sub-link" href="chart-echart.html">Echart</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="slide-right" id="slide-right"><i class="fe fe-chevron-right"></i></div>
+            </div>
+        </div>
     </div>
 </div>

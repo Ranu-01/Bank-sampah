@@ -1,5 +1,10 @@
-<div class="footer out-footer">
-    <div class="copyright">
-        <p>Copyright © Developed by <a href="https://dexignzone.com/" target="_blank">DexignZone</a> 2023</p>
+<div class="main-footer text-center">
+    <div class="container">
+        <div class="row row-sm">
+            <div class="col-md-12">
+                <span>Copyright © 2023 <a href="#">Spruha</a>. Designed by <a
+                        href="https://www.spruko.com/">Spruko</a> All rights reserved.</span>
+            </div>
+        </div>
     </div>
 </div>

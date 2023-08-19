@@ -9,27 +9,23 @@
     @stack('after-style')
 </head>
 
-<body>
-
-    {{-- <div id="preloader">
-        <div>
-            <img src="{{ asset('yash/images/pre.gif') }}" alt="">
-        </div>
-    </div> --}}
-
-    <div id="main-wrapper">
+<body class="ltr main-body leftmenu">
+    <!-- PAGE -->
+    <div class="page">
         @include('includes.header')
         @include('includes.sidebar')
 
-        <div class="content-body">
-            <div class="container-fluid">
-                @yield('content')
+        <div class="main-content side-content pt-0">
+            <div class="main-container container-fluid">
+                <div class="inner-body">
+                    @yield('content')
+                </div>
             </div>
         </div>
-
-        @include('includes.footer')
-
     </div>
+
+    @include('includes.footer')
+    <!-- END PAGE -->
 
     @stack('before-script')
     @include('includes.script')
