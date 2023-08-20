@@ -69,6 +69,15 @@ Route::controller(RwController::class)->group(function () {
     Route::get('/rw/destroy/{id}', 'destroy')->name('rw.destroy');
 });
 
+Route::controller(RtController::class)->group(function () {
+    Route::get('/rt', 'index')->name('rt.index');
+    Route::get('/rt/create', 'create')->name('rt.create');
+    Route::post('/rt/store', 'store')->name('rt.store');
+    Route::get('/rt/edit/{id}', 'edit')->name('rt.edit');
+    Route::post('/rt/update/{id}', 'update')->name('rt.update');
+    Route::get('/rt/destroy/{id}', 'destroy')->name('rt.destroy');
+});
+
 Route::controller(PetugasController::class)->group(function () {
     Route::get('/petugas', 'index')->name('petugas.index');
     Route::get('/petugas/create', 'create')->name('petugas.create');
