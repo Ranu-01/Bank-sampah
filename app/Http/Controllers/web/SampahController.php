@@ -43,7 +43,7 @@ class SampahController extends Controller
             $sampah->harga_per_satuan = $request->harga_satuan;
             $sampah->save();
             DB::commit();
-            return redirect()->route('sampah.index');
+            return redirect()->route('sampah.index')->with("message", "Berhasil menambahkan data sampah");
         } catch (\Exception $ex) {
             DB::rollBack();
             echo $ex->getMessage();
@@ -76,7 +76,7 @@ class SampahController extends Controller
             $sampah->harga_per_satuan = $request->harga_satuan;
             $sampah->save();
             DB::commit();
-            return redirect()->route('sampah.index');
+            return redirect()->route('sampah.index')->with("message", "Berhasil mengubah data sampah");
         } catch (\Exception $ex) {
             DB::rollBack();
             echo $ex->getMessage();
@@ -89,7 +89,7 @@ class SampahController extends Controller
         try {
             Sampah::where('id', $id)->delete();
             DB::commit();
-            return redirect()->route('sampah.index');
+            return redirect()->route('sampah.index')->with("message", "Berhasil menghapus data sampah");
         } catch (\Exception $ex) {
             DB::rollBack();
             echo $ex->getMessage();

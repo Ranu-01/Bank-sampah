@@ -17,8 +17,8 @@
                 <div class="slide-left disabled" id="slide-left"><i class="fe fe-chevron-left"></i></div>
                 <ul class="menu-nav nav">
                     <li class="nav-header"><span class="nav-label">Dashboard</span></li>
-                    <li class="nav-item {{ Request::routeIs('dashboard.index') ? 'active' : '' }}">
-                        <a class="nav-link active" href="{{ route('dashboard.index') }}">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('dashboard.index') }}">
                             <span class="shape1"></span>
                             <span class="shape2"></span>
                             <i class="ti-home sidemenu-icon menu-icon"></i>
@@ -26,8 +26,7 @@
                         </a>
                     </li>
                     <li class="nav-header"><span class="nav-label">Master Data</span></li>
-                    <li
-                        class="nav-item {{ Request::routeIs('kategori-sampah.index') || Request::routeIs('kategori-sampah.edit') || Request::routeIs('kategori-sampah.create') ? 'active' : '' }}">
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('kategori-sampah.index') }}">
                             <span class="shape1"></span>
                             <span class="shape2"></span>
@@ -36,7 +35,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="landing.html">
+                        <a class="nav-link" href="{{ route('sampah.index') }}">
                             <span class="shape1"></span>
                             <span class="shape2"></span>
                             <i class="mdi mdi-archive sidemenu-icon menu-icon"></i>
