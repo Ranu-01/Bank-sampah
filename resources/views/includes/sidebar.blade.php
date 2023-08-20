@@ -67,7 +67,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="landing.html">
+                        <a class="nav-link" href="{{ route('rw.index') }}">
                             <span class="shape1"></span>
                             <span class="shape2"></span>
                             <i class="ti-layout sidemenu-icon menu-icon"></i>
