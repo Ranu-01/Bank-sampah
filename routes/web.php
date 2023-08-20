@@ -28,6 +28,7 @@ Route::controller(DashboardController::class)->group(function () {
 Route::controller(NasabahController::class)->group(function () {
     Route::get('/nasabah', 'index')->name('nasabah.index');
     Route::get('/nasabah/create', 'create')->name('nasabah.create');
+    Route::get('/nasabah/changeStatus/{id}', 'changeStatus')->name('nasabah.changeStatus');
 });
 
 Route::controller(SampahController::class)->group(function () {
