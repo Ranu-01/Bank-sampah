@@ -70,7 +70,7 @@
                         <a class="nav-link" href="{{ route('rw.index') }}">
                             <span class="shape1"></span>
                             <span class="shape2"></span>
-                            <i class="ti-layout sidemenu-icon menu-icon"></i>
+                            <i class="fa fa fa-angle-double-down sidemenu-icon menu-icon"></i>
                             <span class="sidemenu-label">RW</span>
                         </a>
                     </li>
