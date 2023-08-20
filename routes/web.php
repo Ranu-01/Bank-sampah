@@ -5,6 +5,7 @@ use App\Http\Controllers\web\DashboardController;
 use App\Http\Controllers\web\KategoriSampahController;
 use App\Http\Controllers\web\MonitoringController;
 use App\Http\Controllers\web\NasabahController;
+use App\Http\Controllers\web\PetugasController;
 use App\Http\Controllers\web\SampahController;
 use App\Http\Controllers\web\TransaksiController;
 
@@ -55,4 +56,14 @@ Route::controller(KategoriSampahController::class)->group(function () {
     Route::get('/kategori-sampah/edit/{id}', 'edit')->name('kategori-sampah.edit');
     Route::post('/kategori-sampah/update/{id}', 'update')->name('kategori-sampah.update');
     Route::get('/kategori-sampah/destroy/{id}', 'destroy')->name('kategori-sampah.destroy');
+});
+
+Route::controller(PetugasController::class)->group(function () {
+    Route::get('/petugas', 'index')->name('petugas.index');
+    Route::get('/petugas/create', 'create')->name('petugas.create');
+    Route::post('/petugas/store', 'store')->name('petugas.store');
+    Route::get('/petugas/changeStatus/{id}', 'changeStatus')->name('petugas.changeStatus');
+    Route::get('/petugas/destroy/{id}', 'destroy')->name('petugas.destroy');
+    Route::get('/petugas/edit/{id}', 'edit')->name('petugas.edit');
+    Route::post('/petugas/update/{id}', 'update')->name('petugas.update');
 });

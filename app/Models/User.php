@@ -47,4 +47,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Nasabah::class);
     }
+
+    public function petugas()
+    {
+        return $this->hasOne(Petugas::class);
+    }
 }

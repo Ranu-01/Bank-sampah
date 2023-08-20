@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    Nasabah
+    Petugas
 @endsection
 
 @push('after-script')
@@ -31,7 +31,7 @@
     <!-- Page Header -->
     <div class="page-header">
         <div>
-            <h2 class="main-content-title tx-24 mg-b-5">Nasabah</h2>
+            <h2 class="main-content-title tx-24 mg-b-5">Petugas</h2>
         </div>
         <div class="d-flex">
             <div class="justify-content-center">
@@ -41,9 +41,9 @@
                 <button type="button" class="btn btn-white btn-icon-text my-2 me-2">
                     <i class="fe fe-filter me-2"></i> Filter
                 </button> --}}
-                {{-- <a href="{{ route('sampah.create') }}" class="btn btn-primary my-2 btn-icon-text">
+                <a href="{{ route('petugas.create') }}" class="btn btn-primary my-2 btn-icon-text">
                     <i class="fe fe-plus me-2"></i> Tambah Data
-                </a> --}}
+                </a>
             </div>
         </div>
     </div>
@@ -64,20 +64,16 @@
             <div class="card custom-card overflow-hidden">
                 <div class="card-body">
                     <div class="mb-3">
-                        <h6 class="main-content-label mb-1">Data Nasabah</h6>
+                        <h6 class="main-content-label mb-1">Data Petugas</h6>
                     </div>
                     <div class="table-responsive">
                         <table class="table table-bordered border-bottom" id="example1">
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama Nasabah</th>
-                                    <th>NIK</th>
-                                    <th>No KK</th>
+                                    <th>Nama Petugas</th>
                                     <th>No Handphone</th>
                                     <th>Alamat</th>
-                                    <th>Rt</th>
-                                    <th>Rw</th>
                                     <th>Email</th>
                                     <th>Status</th>
                                     <th>Action</th>
@@ -87,29 +83,32 @@
                                 @php
                                     $no = 1;
                                 @endphp
-                                @foreach ($data_nasabah as $nasabah)
+                                @foreach ($petugas as $data)
                                     <tr>
                                         <td>{{ $no++ }}</td>
-                                        <td>{{ $nasabah->user->name }}</td>
-                                        <td>{{ $nasabah->nik }}</td>
-                                        <td>{{ $nasabah->no_kk }}</td>
-                                        <td>{{ $nasabah->handphone }}</td>
-                                        <td>{{ $nasabah->alamat }}</td>
-                                        <td>{{ $nasabah->rt->rt }}</td>
-                                        <td>{{ $nasabah->rt->rw->rw }}</td>
-                                        <td>{{ $nasabah->user->email }}</td>
-                                        <td>{{ $nasabah->user->status == 1 ? 'Aktif' : 'Non Aktif' }}</td>
+                                        <td>{{ $data->user->name }}</td>
+                                        <td>{{ $data->handphone }}</td>
+                                        <td>{{ $data->alamat }}</td>
+                                        <td>{{ $data->user->email }}</td>
+                                        <td>{{ $data->user->status == 1 ? 'Aktif' : 'Non Aktif' }}</td>
                                         <td>
-                                            @if ($nasabah->user->status == 1)
-                                                <a href="{{ route('nasabah.changeStatus', ['id' => $nasabah->user_id]) }}"
-                                                    class="btn btn-warning btn-icon-text"><i
+                                            @if ($data->user->status == 1)
+                                                <a href="{{ route('petugas.changeStatus', ['id' => $data->user_id]) }}"
+                                                    class="btn btn-warning btn-icon-text mx-1"><i
                                                         class="fe fe-pause-circle me-2"></i> Nonaktifkan</a>
                                             @else
-                                                <a href="{{ route('nasabah.changeStatus', ['id' => $nasabah->user_id]) }}"
-                                                    class="btn btn-success btn-icon-text"><i
+                                                <a href="{{ route('petugas.changeStatus', ['id' => $data->user_id]) }}"
+                                                    class="btn btn-success btn-icon-text mx-1"><i
                                                         class="fe fe-play-circle me-2"></i> Aktifkan</a>
                                             @endif
+                                            <a href="{{ route('petugas.edit', ['id' => $data->user_id]) }}"
+                                                class="btn btn-info btn-icon-text my-2 mx-1"><i
+                                                    class="fe fe-edit me-2"></i>Edit</a><a
+                                                href="{{ route('petugas.destroy', ['id' => $data->user_id]) }}"class="btn btn-danger btn-icon-text my-2 mx-1"><i
+                                                    class="fe fe-trash me-2"></i>Hapus</a>
                                         </td>
+                                    </tr>
+                                    </td>
                                     </tr>
                                 @endforeach
                             </tbody>

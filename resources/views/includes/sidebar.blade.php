@@ -51,10 +51,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="landing.html">
+                        <a class="nav-link" href="{{ route('petugas.index') }}">
                             <span class="shape1"></span>
                             <span class="shape2"></span>
-                            <i class="ti-layout sidemenu-icon menu-icon"></i>
+                            <i class="far fa-address-card sidemenu-icon menu-icon"></i>
                             <span class="sidemenu-label">Petugas</span>
                         </a>
                     </li>
