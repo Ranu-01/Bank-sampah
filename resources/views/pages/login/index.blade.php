@@ -1,86 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Mirrored from php.spruko.com/spruha/spruha/pages/signin.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2023 17:09:53 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
-    <title>Login</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="{{ asset('images/icons/favicon.icon') }}" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('login/vendor/bootstrap/css/bootstrap.min.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css"
-        href="{{ asset('login/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('login/vendor/animate/animate.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('login/vendor/css-hamburgers/hamburgers.min.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('login/vendor/animsition/css/animsition.min.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('login/vendor/select2/select2.min.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('login/vendor/daterangepicker/daterangepicker.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('login/css/util.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('login/css/main.css') }}">
-    <!--===============================================================================================-->
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta name="description" content="Spruha - PHP Admin Panel Dashboard Template">
+    <meta name="author" content="Spruko Technologies Private Limited">
+    <meta name="keywords"
+        content="php dashboard, php template, admin dashboard bootstrap, bootstrap admin theme, admin, php admin panel, bootstrap admin template, admin dashboard template, admin template bootstrap, php admin dashboard, dashboard template, dashboard template bootstrap, bootstrap admin, admin panel template, dashboard">
+
+    <!-- TITLE -->
+    <title> BANSTAL - Login </title>
+
+
+    <!-- BOOTSTRAP CSS -->
+    <link id="style" href="{{ asset('spruha/assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- ICONS CSS -->
+    <link href="{{ asset('spruha/assets/plugins/web-fonts/icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('spruha/assets/plugins/web-fonts/font-awesome/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('spruha/assets/plugins/web-fonts/plugin.css') }}" rel="stylesheet">
+
+    <!-- STYLE CSS -->
+    <link href="{{ asset('spruha/assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('spruha/assets/css/plugins.css') }}" rel="stylesheet">
+
+    <!-- SWITCHER CSS -->
+    <link href="{{ asset('spruha/assets/switcher/css/switcher.css') }}" rel="stylesheet">
+    <link href="{{ asset('spruha/assets/switcher/demo.css') }}" rel="stylesheet">
+
+
 </head>
 
-<body>
+<body class="ltr main-body leftmenu error-1">
 
-    <div class="limiter">
-        <div class="container-login100" style="background-image: url('img/bghome.jpg');">
-            <div class="wrap-login100 p-t-30 p-b-50">
-                <span class="login100-form-title p-b-41">
-                    Login
-                </span>
-                <form class="login100-form validate-form p-b-33 p-t-5">
 
-                    <div class="wrap-input100 validate-input" data-validate="Enter username">
-                        <input class="input100" type="text" name="username" placeholder="User name">
-                        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+    <!-- END PAGE -->
+
+    <div class="page main-signin-wrapper">
+
+        <!-- Row -->
+        <div class="row signpages text-center">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="row row-sm">
+                        <div class="col-lg-6 col-xl-5 d-none d-lg-block text-center bg-primary details">
+                            <div class="mt-5 pt-4 p-2 pos-absolute">
+                                <img src="{{ asset('spruha/assets/img/brand/logo-light.png') }}"
+                                    class="header-brand-img mb-4" alt="logo">
+                                <div class="clearfix"></div>
+                                <img src="https://php.spruko.com/spruha/spruha/assets/img/svgs/user.svg"
+                                    class="ht-100 mb-0" alt="user">
+                                <h5 class="mt-4 text-white">Create Your Account</h5>
+                                <span class="tx-white-6 tx-13 mb-5 mt-xl-0">Signup to create, discover and connect with
+                                    the global community</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-7 col-xs-12 col-sm-12 login_form ">
+                            <div class="main-container container-fluid">
+                                <div class="row row-sm">
+                                    <div class="card-body mt-2 mb-2">
+                                        <img src="{{ asset('spruha/assets/img/brand/logo-light.png') }}"
+                                            class="d-lg-none header-brand-img text-start float-start mb-4 error-logo-light"
+                                            alt="logo">
+                                        <img src="{{ asset('spruha/assets/img/brand/logo.png') }}"
+                                            class=" d-lg-none header-brand-img text-start float-start mb-4 error-logo"
+                                            alt="logo">
+                                        <div class="clearfix"></div>
+                                        <form>
+                                            <h5 class="text-start mb-2">Signin to Your Account</h5>
+                                            <p class="mb-4 text-muted tx-13 ms-0 text-start">Signin to create, discover
+                                                and connect with the global community</p>
+                                            <div class="form-group text-start">
+                                                <label>Email</label>
+                                                <input class="form-control" placeholder="Enter your email"
+                                                    type="text" name="email">
+                                            </div>
+                                            <div class="form-group text-start">
+                                                <label>Password</label>
+                                                <input class="form-control" placeholder="Enter your password"
+                                                    type="password" name="password">
+                                            </div>
+                                            <button type="submit"
+                                                class="btn btn-main-primary btn-block text-white">Sign
+                                                In</button>
+                                        </form>
+                                        <div class="text-start mt-5 ms-0">
+                                            <div class="mb-1"><a href="forgot.html">Forgot password?</a></div>
+                                            <div>Don't have an account? <a href="signup.html">Register Here</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="wrap-input100 validate-input" data-validate="Enter password">
-                        <input class="input100" type="password" name="pass" placeholder="Password">
-                        <span class="focus-input100" data-placeholder="&#xe80f;"></span>
-                    </div>
-
-                    <div class="container-login100-form-btn m-t-32">
-                        <button class="login100-form-btn">
-                            Masuk
-                        </button>
-                    </div>
-
-                </form>
+                </div>
             </div>
         </div>
+        <!-- End Row -->
+
+
     </div>
+    <!-- END PAGE -->
+
+    <!-- SCRIPTS -->
+
+    <!-- JQUERY JS -->
+    <script src="{{ asset('spruha/assets/plugins/jquery/jquery.min.js') }}"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="{{ asset('spruha/assets/plugins/bootstrap/js/popper.min.js') }}"></script>
+    <script src="{{ asset('spruha/assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+
+    <!-- PERFECT SCROLLBAR JS -->
+    <script src="{{ asset('spruha/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+
+    <!-- SELECT2 JS -->
+    <script src="{{ asset('spruha/assets/plugins/select2/js/select2.min.js') }}"></script>
+    <script src="{{ asset('spruha/assets/js/select2.js') }}"></script>
 
 
-    <div id="dropDownSelect1"></div>
 
-    <!--===============================================================================================-->
-    <script src="{{ asset('login/vendor/jquery/jquery-3.2.1.min.js') }}"></script>
-    <!--===============================================================================================-->
-    <script src="{{ asset('login/vendor/animsition/js/animsition.min.js') }}"></script>
-    <!--===============================================================================================-->
-    <script src="{{ asset('login/vendor/bootstrap/js/popper.js') }}"></script>
-    <script src="{{ asset('login/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
-    <!--===============================================================================================-->
-    <script src="{{ asset('login/vendor/select2/select2.min.js') }}"></script>
-    <!--===============================================================================================-->
-    <script src="{{ asset('login/vendor/daterangepicker/moment.min.js') }}"></script>
-    <script src="{{ asset('login/vendor/daterangepicker/daterangepicker.js') }}"></script>
-    <!--===============================================================================================-->
-    <script src="{{ asset('login/vendor/countdowntime/countdowntime.js') }}"></script>
-    <!--===============================================================================================-->
-    <script src="{{ asset('login/js/main.js') }}"></script>
+    <!-- COLOR THEME JS -->
+    <script src="{{ asset('spruha/assets/js/themeColors.js') }}"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="{{ asset('spruha/assets/js/custom.js') }}"></script>
+
+    <!-- SWITCHER JS -->
+    <script src="{{ asset('spruha/assets/switcher/js/switcher.js') }}"></script>
+
+    <!-- END SCRIPTS -->
 
 </body>
+
+<!-- Mirrored from php.spruko.com/spruha/spruha/pages/signin.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2023 17:09:53 GMT -->
 
 </html>
