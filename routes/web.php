@@ -91,4 +91,6 @@ Route::controller(PetugasController::class)->group(function () {
 
 Route::controller(AuthController::class)->group(function () {
     Route::get('/auth', 'index')->name('auth.index');
+    Route::post('/login', [AuthController::class, 'login']);
+    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 });
