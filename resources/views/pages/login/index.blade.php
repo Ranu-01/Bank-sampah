@@ -65,7 +65,8 @@
                                         <img src="{{ asset('spruha/assets/img/brand/logo-light.png') }}" class="d-lg-none header-brand-img text-start float-start mb-4 error-logo-light" alt="logo">
                                         <img src="{{ asset('spruha/assets/img/brand/logo.png') }}" class=" d-lg-none header-brand-img text-start float-start mb-4 error-logo" alt="logo">
                                         <div class="clearfix"></div>
-                                        <form>
+                                        <form action="{{url('/login')}}" method="post">
+                                            @csrf
                                             <h5 class="text-start mb-2">Masuk ke Akun Anda</h5>
                                             <p class="mb-4 text-muted tx-13 ms-0 text-start">Signin to create, discover
                                                 and connect with the global community</p>
