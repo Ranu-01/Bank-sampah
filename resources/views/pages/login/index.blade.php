@@ -53,9 +53,8 @@
                                 <img src="{{ asset('spruha/assets/img/brand/logo-light.png') }}" class="header-brand-img mb-4" alt="logo">
                                 <div class="clearfix"></div>
                                 <img src="https://php.spruko.com/spruha/spruha/assets/img/svgs/user.svg" class="ht-100 mb-0" alt="user">
-                                <h5 class="mt-4 text-white">Create Your Account</h5>
-                                <span class="tx-white-6 tx-13 mb-5 mt-xl-0">Signup to create, discover and connect with
-                                    the global community</span>
+                                <h5 class="mt-4 text-white">Selamat Datang di BANSTAL </h5>
+                                <span class="tx-white-6 tx-13 mb-5 mt-xl-0">Signup </span>
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-7 col-xs-12 col-sm-12 login_form ">
@@ -72,11 +71,16 @@
                                                 and connect with the global community</p>
                                             <div class="form-group text-start">
                                                 <label>Email</label>
-                                                <input class="form-control" placeholder="Enter your email" type="text" name="email">
+                                                @error('email')
+                                                <div class="invalid-feedback">
+                                                    {{$massage}}
+                                                </div>
+                                                @enderror
+                                                <input class="form-control @error('email') is-invalid @enderror" placeholder="Enter your email" type="text" name="email" autofocus required>
                                             </div>
                                             <div class="form-group text-start">
                                                 <label>Password</label>
-                                                <input class="form-control" placeholder="Enter your password" type="password" name="password">
+                                                <input class="form-control" placeholder="Enter your password" type="password" name="password" required>
                                             </div>
                                             <button type="submit" class="btn btn-main-primary btn-block text-white">Sign
                                                 In</button>
