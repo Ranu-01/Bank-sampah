@@ -7,22 +7,18 @@
             <div class="hor-logo">
                 <a class="main-logo" href="index.html">
                     <img src="../assets/img/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
-                    <img src="../assets/img/brand/logo-light.png" class="header-brand-img desktop-logo-dark"
-                        alt="logo">
+                    <img src="../assets/img/brand/logo-light.png" class="header-brand-img desktop-logo-dark" alt="logo">
                 </a>
             </div>
         </div>
         <div class="main-header-center">
             <div class="responsive-logo">
                 <a href="index.html"><img src="../assets/img/brand/logo.png" class="mobile-logo" alt="logo"></a>
-                <a href="index.html"><img src="../assets/img/brand/logo-light.png" class="mobile-logo-dark"
-                        alt="logo"></a>
+                <a href="index.html"><img src="../assets/img/brand/logo-light.png" class="mobile-logo-dark" alt="logo"></a>
             </div>
         </div>
         <div class="main-header-right">
-            <button class="navbar-toggler navresponsive-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navresponsive-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fe fe-more-vertical header-icons navbar-toggler-icon"></i>
             </button><!-- Navresponsive closed -->
             <div class="navbar navbar-expand-lg  nav nav-item  navbar-nav-right responsive-navbar navbar-dark  ">
@@ -31,15 +27,14 @@
                         <!-- Profile -->
                         <div class="dropdown main-profile-menu">
                             <a class="d-flex" href="javascript:void(0);">
-                                <span class="main-img-user"><img alt="avatar"
-                                        src="{{ asset('spruha/assets/img/users/1.jpg') }}"></span>
+                                <span class="main-img-user"><img alt="avatar" src="{{ asset('spruha/assets/img/users/1.jpg') }}"></span>
                             </a>
                             <div class="dropdown-menu">
                                 <div class="header-navheading">
                                     <h6 class="main-notification-title">Sonia Taylor</h6>
                                     <p class="main-notification-text">Web Designer</p>
                                 </div>
-                                <a class="dropdown-item" href="signin.html">
+                                <a class="dropdown-item" href="{{route('auth.logout')}}">
                                     <i class="fe fe-power"></i> Sign Out
                                 </a>
                             </div>
@@ -47,8 +42,7 @@
                         <!-- Profile -->
                         <!-- Sidebar -->
                         <div class="dropdown  header-settings">
-                            <a href="javascript:void(0);" class="nav-link icon" data-bs-toggle="sidebar-right"
-                                data-bs-target=".sidebar-right">
+                            <a href="javascript:void(0);" class="nav-link icon" data-bs-toggle="sidebar-right" data-bs-target=".sidebar-right">
                                 <i class="fe fe-align-right header-icons"></i>
                             </a>
                         </div>

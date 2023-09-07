@@ -50,9 +50,9 @@
                     <div class="row row-sm">
                         <div class="col-lg-6 col-xl-5 d-none d-lg-block text-center bg-primary details">
                             <div class="mt-5 pt-4 p-2 pos-absolute">
-                                <img src="{{ asset('spruha/assets/img/brand/logo-light.png') }}" class="header-brand-img mb-4" alt="logo">
+                                <!-- <img src="{{ asset('spruha/assets/img/brand/logo-light.png') }}" class="header-brand-img mb-4" alt="logo"> -->
                                 <div class="clearfix"></div>
-                                <img src="https://php.spruko.com/spruha/spruha/assets/img/svgs/user.svg" class="ht-100 mb-0" alt="user">
+                                <img src="{{ asset('spruha/assets/img/logo-banstal-no-background.png') }}" class="ht-100 mb-0" alt="user">
                                 <h5 class="mt-4 text-white">Selamat Datang di BANSTAL </h5>
                                 <span class="tx-white-6 tx-13 mb-5 mt-xl-0">Signup </span>
                             </div>

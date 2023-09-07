@@ -29,9 +29,11 @@ class AuthController extends Controller
     }
 
     // Menangani proses logout
-    public function logout()
+    public function logout(Request $request)
     {
         Auth::logout();
+        $request->session()->invalidate();
+        // Auth::logout();
         return redirect('/auth');
     }
 }
